@@ -82,8 +82,8 @@
                     
                     <div class="row clearfix">
                         <div class="main-menu col-md-10">
-                            <ul id="menu-menu" class="sm menus"><li id="menu-item-1938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1592 current_page_item menu-item-1938"><a href="https://financetheme.themesawesome.com/" aria-current="page">Home</a></li>
-    <li id="menu-item-1937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1937"><a href="https://financetheme.themesawesome.com/about-2/">About</a></li>
+                            <ul id="menu-menu" class="sm menus"><li id="menu-item-1938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1592 current_page_item menu-item-1938"><router-link to="/" aria-current="page">Home</router-link></li>
+    <li id="menu-item-1937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1937"><router-link to="/about">About</router-link></li>
     <li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1936"><a href="https://financetheme.themesawesome.com/services/">Services</a>
     <ul class="sub-menu">
     <li id="menu-item-1942" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1942"><a href="https://financetheme.themesawesome.com/service/audit-assurance/">Audit &amp; Assurance</a></li>
