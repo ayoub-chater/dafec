@@ -1,5 +1,6 @@
 <script setup>
     import NavbarComponent from "../components/NavbarComponent.vue"
+    import BannerComponent from '../components/BannerComponent.vue'
     import ReviewComponent from "../components/ReviewComponent.vue"
     import ServiceComponent from "../components/ServiceComponent.vue"
     import FeatureComponent from "../components/FeatureComponent.vue"
@@ -10,6 +11,7 @@
 
 <template>
     <NavbarComponent />
+    <BannerComponent />
     <ServiceComponent />
     <ReviewComponent />
     <FeatureComponent />

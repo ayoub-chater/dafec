@@ -10,6 +10,11 @@
  */
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+:root{
+    --primary-color: #FED100;
+    --secondary-color: #034135;
+}
+
 
 html {
     font-family: sans-serif;
@@ -3727,20 +3732,19 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color)
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
 .btn-primary:active,
-.btn-primary.active,
-.open>.dropdown-toggle.btn-primary {
+.btn-primary.active {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color)
 }
 
 .btn-primary:active,
@@ -3781,6 +3785,11 @@ fieldset[disabled] .btn-primary.active {
     background-color: #5cb85c;
     border-color: #4cae4c
 }
+.btn-secondary {
+    color: #fff;
+    background-color:var(--secondary-color);
+    border-color: var(--secondary-color);
+}
 
 .btn-success:hover,
 .btn-success:focus,
@@ -3791,6 +3800,15 @@ fieldset[disabled] .btn-primary.active {
     color: #fff;
     background-color: #449d44;
     border-color: #398439
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.focus,
+.btn-secondary:active,
+.btn-secondary.active {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color)
 }
 
 .btn-success:active,

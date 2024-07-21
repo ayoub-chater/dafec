@@ -1,0 +1,170 @@
+<script setup>
+import { onMounted, reactive, ref, shallowReactive } from "vue";
+import {
+  VueFlux,
+  FluxPreloader,
+  FluxControls,
+  FluxPagination,
+  FluxParallax,
+  Img,
+  Zip,
+  Blocks2,
+  Blocks1,
+  Waterfall,
+} from "vue-flux";
+import "vue-flux/style.css";
+
+const options = reactive({
+  allowFullscreen: false,
+  allowToSkipTransition: true,
+  autohideTime: 2500,
+  autoplay: true,
+  bindKeys: false,
+  delay: 5000,
+  enableGestures: false,
+  infinite: true,
+  lazyLoad: true,
+  lazyLoadAfter: 3,
+});
+
+const rscs = shallowReactive([
+  new Img(
+    "https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/06/slide2.jpg?x12902",
+    {
+      title: "Get Free Consultation From Our Experts",
+      subtitle:
+        "We proud our selves to providing great services and support to Our Customer",
+    }
+  ),
+  new Img(
+    "https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/06/slider_2.jpg?x12902",
+    {
+      title: "Lets Start Future Financial Plan",
+      subtitle:
+        "We provide financial guidance over 20 years with our best expert and ensure you the best result from us",
+    }
+  ),
+]);
+
+const height = ref("250px");
+const offset = ref("50%");
+
+const transitions = shallowReactive([Zip, Blocks2, Blocks1, Waterfall]);
+
+onMounted(() => {
+  console.log(rscs);
+});
+</script>
+
+<template>
+  <div class="home-banner-wrapper">
+    <div class="home-banner">
+      <div class="content-layer col-sm-12 col-lg-6 ">
+        <div class="text-content" style="display: block; z-index: 100">
+          <div class="banner-heading">
+            <h1 
+            style="
+            font-size: 62px;
+            font-weight: 800;
+            width: 70%;
+            color: #034153;
+            font-family: 'fira sans'
+            "
+            >Lets Start Future Financial Plan</h1>
+            <p style=
+            "    
+            font-size: 20px;
+            color: #333333;
+            width: 55%;
+            font-family: 'open sans';
+            font-weight: bold;
+            margin-top: 40px;
+            ">
+                We provide financial guidance over 20 years with our best expert and ensure you the best result from us
+            </p>
+          </div>
+          <div class="button-container">
+            <button class="btn btn-primary">Learn More</button>
+            <button class="btn btn-secondary">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+:root{
+    --primary-color: #FED100;
+    --secondary-color: #034135;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color:var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.focus,
+.btn-secondary:active,
+.btn-secondary.active {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color)
+}
+
+.btn-primary {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color)
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active {
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color)
+}
+
+.home-banner-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+  max-width: none !important;
+}
+.home-banner {
+  background-image: url("https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/06/slider_2.jpg?x12902");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 750px;
+}
+.content-layer {
+  position: absolute;
+  top: 25%; 
+  left: 20%; 
+  padding: 20px; 
+  
+  
+}
+
+.button-container {
+  display: flex;
+  margin-top: 40px; 
+}
+
+button {
+  /* Style your buttons as desired */
+  padding: 15px 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+}
+</style>
