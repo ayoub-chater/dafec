@@ -1194,3 +1194,188 @@ a.button-normal:hover,
     left: 0;
 }
 
+/*-----------------------------------------------------------------------------------*/
+
+/*  3. MOBILE NAVIGATION
+/*-----------------------------------------------------------------------------------*/
+
+.mobile-menu {
+    display: block;
+    text-align: right;
+}
+
+#slide-buttons {
+    color: #034153;
+    height: 63px;
+    width: 50px;
+    line-height: 72px;
+    border: none;
+    font-size: 28px;
+    padding: 0;
+    position: relative;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#slide-buttons:hover,
+#slide-buttons:focus,
+#slide-buttons.active,
+.c-menu__close:hover,
+.c-menu__close:focus,
+.c-menu__close.active {
+    outline: 0;
+}
+
+.c-menu {
+    position: fixed;
+    z-index: 200;
+    padding: 50px 0 0 0;
+    background-color: #fff;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.c-menu--slide-right {
+    height: 100%;
+}
+
+.c-menu--slide-right {
+    top: 0;
+    right: 0;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.c-menu--slide-right.is-active {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.c-menu__close {
+    color: #333333;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.c-menu__close:before {
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 18px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.c-menu__close:hover:before {
+    border: 1px solid #034153;
+    background-color: #034153;
+    color: #ffffff;
+}
+
+.c-menu--slide-right>ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.c-menu--slide-right>ul li {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px 0 10px 20px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.c-menu--slide-right>ul li.menu-selected ul {
+    border-top: 1px solid #e8e8e8;
+    margin-top: 10px;
+}
+
+.c-menu--slide-right>ul li.menu-item-has-children:after,
+.c-menu--slide-right>ul li.page_item_has_children:after {
+    display: inline-block;
+    font-family: "finance" !important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    position: absolute;
+    content: "\67";
+    top: 0px;
+    right: 0;
+    width: 45px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    border-left: 1px solid #e8e8e8;
+}
+
+.c-menu--slide-right>ul>li>ul.sub-menu,
+.c-menu--slide-right>ul>li>ul.children {
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    padding-left: 25px;
+}
+
+.c-menu--slide-right>ul>li>ul.sub-menu li:last-child,
+.c-menu--slide-right>ul>li>ul.children li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.c-menu--slide-right>ul>li.menu-selected>ul.sub-menu,
+.c-menu--slide-right>ul>li.menu-selected>ul.children {
+    max-height: 100%;
+    padding-left: 0;
+}
+
+.c-menu--slide-right ul.menus li a {
+    font-family: 'fira_sansregular';
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #333333;
+}
+
+.slide-overlay {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    background-color: #000;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+    transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+}
+
+.slide-overlay.is-active {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.navigation #main-menu {
+    display: none;
+}
+
+#header .mobile-menu {
+    display: block;
+}
+
+.c-menu--slide-right {
+    width: 300px;
+    height: 100%;
+}
+

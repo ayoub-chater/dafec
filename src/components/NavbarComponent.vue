@@ -85,24 +85,8 @@
                             <ul id="menu-menu" class="sm menus"><li id="menu-item-1938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1592 current_page_item menu-item-1938"><router-link to="/" aria-current="page">Home</router-link></li>
     <li id="menu-item-1937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1937"><router-link to="/about">About</router-link></li>
     <li id="menu-item-1936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1936"><a href="https://financetheme.themesawesome.com/services/">Services</a>
-    <ul class="sub-menu">
-    <li id="menu-item-1942" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1942"><a href="https://financetheme.themesawesome.com/service/audit-assurance/">Audit &amp; Assurance</a></li>
-    <li id="menu-item-1941" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1941"><a href="https://financetheme.themesawesome.com/service/bonds-commodities/">Bonds &amp; Commodities</a></li>
-    <li id="menu-item-1945" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1945"><a href="https://financetheme.themesawesome.com/service/financial-projections/">Financial Projections</a></li>
-    <li id="menu-item-1944" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1944"><a href="https://financetheme.themesawesome.com/service/strategic-planning/">Strategic Planning</a></li>
-    <li id="menu-item-1940" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1940"><a href="https://financetheme.themesawesome.com/service/turnaround-consulting/">Turnaround Consulting</a></li>
-    <li id="menu-item-1943" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1943"><a href="https://financetheme.themesawesome.com/service/trades-stocks/">Trades &amp; Stocks</a></li>
-    </ul>
     </li>
-    <li id="menu-item-1935" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1935"><a href="https://financetheme.themesawesome.com/case-studies/">Case Studies</a>
-    <ul class="sub-menu">
-    <li id="menu-item-2010" class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2010"><a href="https://financetheme.themesawesome.com/case/personal-banking/">Personal Banking</a></li>
-    <li id="menu-item-2008" class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2008"><a href="https://financetheme.themesawesome.com/case/plan-for-your-future/">Plan For Your Future</a></li>
-    <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2009"><a href="https://financetheme.themesawesome.com/case/the-next-big-thing/">The Next Big Thing</a></li>
-    </ul>
-    </li>
-    <li id="menu-item-1939" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1939"><a href="https://financetheme.themesawesome.com/blog/">Blog</a></li>
-    <li id="menu-item-1934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934"><a href="https://financetheme.themesawesome.com/contact/">Contact</a></li>
+    <li id="menu-item-1934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934"><router-link to="/contact">Contact</router-link></li>
     </ul>						</div>
 
                         <div class="right-section col-md-2">
