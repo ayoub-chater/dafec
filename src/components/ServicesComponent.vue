@@ -30,7 +30,7 @@ function viewServiceDetails(service) {
 				<p class="excerpt">{{ item.description }}</p>
 			</div>
 			<div class="view-more">
-				<i class="icon-finance-arrow-right"></i><router-link :to="`/services/${item.name}`">Read More</router-link>
+				<i class="fa-solid fa-plus"></i><router-link :to="`/services/${item.name}`">Read More</router-link>
 			</div>
 			</div>
 		</div>

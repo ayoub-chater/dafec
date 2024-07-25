@@ -7,7 +7,7 @@
 			<div class="row">
 
 									<h2 class="section-title">
-						Our Experts Team					</h2>
+										Notre équipe					</h2>
 				
 				
 				<div class="team-member col-md-4">

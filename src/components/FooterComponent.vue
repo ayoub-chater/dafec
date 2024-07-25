@@ -13,11 +13,11 @@
 
                     <div class="footer-widget col-md-3">
                         <div id="text-2" class="widget-footer widget_text">
-                            <h2 class="title">Finance Theme</h2>
+                            <h2 class="title">Dafec</h2>
                             <div class="textwidget">
                                 <p>Neque porro quisquam est, qui dolore ipsum quia dolor sit amet, consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt lores ta porro ame.</p>
 
-                                <a href="https://themeforest.net/item/finance-financial-business-accounting-theme/16618286?ref=themesawesome" class="button button-white">Get a Quote</a></div>
+                                <router-link to="/contact" class="button button-white">Get a Quote</router-link></div>
                         </div>
                     </div>
 
@@ -47,10 +47,9 @@
                         <div id="social_box-widget-3" class="widget-footer socialbox-widget">
                             <h2 class="title">Follow Us!</h2>
                             <ul class="clearfix">
-                                <li><a target="_blank" data-title="Facebook" class="socialbox-item facebook" href="https://financetheme.themesawesome.com/"><i class="icon-facebook"></i></a></li>
-                                <li><a target="_blank" data-title="Twitter" class="socialbox-item twitter" href="https://financetheme.themesawesome.com/"><i class="icon-twitter"></i></a></li>
-                                <li><a target="_blank" data-title="Pinterest" class="socialbox-item pinterest" href="https://financetheme.themesawesome.com/"><i class="icon-pinterest"></i></a></li>
-                                <li><a target="_blank" data-title="Youtube" class="socialbox-item youtube" href="https://financetheme.themesawesome.com/"><i class="icon-youtube"></i></a></li>
+                                <li><a target="_blank" data-title="Facebook" class="socialbox-item facebook" href="https://financetheme.themesawesome.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a target="_blank" data-title="Twitter" class="socialbox-item twitter" href="https://financetheme.themesawesome.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a target="_blank" data-title="Pinterest" class="socialbox-item pinterest" href="https://financetheme.themesawesome.com/"><i class="fa-brands fa-linkedin"></i></a></li>
                             </ul>
 
                         </div>
@@ -69,7 +68,7 @@
                                 </div>
 
                                 <div class="contact-section">
-                                    <i class="icon-finance-call-in"></i>
+                                    <i class="fa-solid fa-location-dot"></i>
                                     <div class="text-section">
                                         <h4>Phone</h4>
                                         <p>+84 345 876 123 </p>
@@ -77,7 +76,7 @@
                                 </div>
 
                                 <div class="contact-section">
-                                    <i class="icon-finance-mail"></i>
+                                    <i class="fa-solid fa-envelope-open-text"></i>
                                     <div class="text-section">
                                         <h4>Email</h4>
                                         <p>finance@themes.com</p>
@@ -85,7 +84,7 @@
                                 </div>
 
                                 <div class="contact-section">
-                                    <i class="icon-finance-timer"></i>
+                                    <i class="fa-regular fa-clock"></i>
                                     <div class="text-section">
                                         <h4>Monday - Friday</h4>
                                         <p>10.00 am to 18.00 pm</p>
@@ -241,4 +240,28 @@
     margin-bottom: 0;
     color: #ffffff;
 }
+
+.contact-section {
+    align-items: center;
+    display: flex;
+}
+
+.socialbox-widget ul li a {
+    font-size: 15px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #045971;
+    padding: 10px 12px 7px;
+    border-radius: 3px;
+}
+
+ul.clearfix {
+    display: flex;
+    list-style-type: none;
+    width: fit-content;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
 </style>

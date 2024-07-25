@@ -4,6 +4,7 @@ import AboutView from '../views/AboutView.vue'
 import ContactView from '../views/ContactView.vue'
 import ServicesView from '../views/ServicesView.vue'
 import ServiceView from '../views/ServiceView.vue'
+import SolutionsView from '../views/SolutionsView.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,7 +15,7 @@ const router = createRouter({
             component: HomeView,
         },
         {
-            path: '/À propos',
+            path: '/à-propos',
             name: 'about',
             component: AboutView,
         },
@@ -27,6 +28,11 @@ const router = createRouter({
             path: '/nos-services',
             name: 'services',
             component: ServicesView,
+        },
+        {
+            path: '/nos-solutions',
+            name: 'solutions',
+            component: SolutionsView,
         },
         {
             path: '/services/:name',

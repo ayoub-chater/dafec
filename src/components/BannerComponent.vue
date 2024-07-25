@@ -86,8 +86,8 @@ onMounted(() => {
             </p>
           </div>
           <div class="button-container">
-            <button class="btn btn-primary">Learn More</button>
-            <button class="btn btn-secondary">Contact Us</button>
+            <router-link to="/à-propos"><button class="btn btn-primary">Learn More</button></router-link>
+            <router-link to="/contact"><button class="btn btn-secondary">Contact Us</button></router-link>
           </div>
         </div>
       </div>

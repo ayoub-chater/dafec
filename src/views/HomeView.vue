@@ -4,7 +4,7 @@
     import ReviewComponent from "../components/ReviewComponent.vue"
     import ServiceComponent from "../components/ServiceComponent.vue"
     import FeatureComponent from "../components/FeatureComponent.vue"
-    import BlogComponent from "../components/BlogComponent.vue"
+    import BlogComponent from "../components/NosolutionsComponent.vue"
     import FormComponent from "../components/FormComponent.vue"
     import FooterComponent from "../components/FooterComponent.vue"
 </script>

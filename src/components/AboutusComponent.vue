@@ -26,7 +26,7 @@
 				
 				<div class="about-desc col-md-6">
 											<h2 class="section-title">
-							About Us						</h2>
+												Notre Objectif						</h2>
 											<div class="about-text">
 							<p>With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company as often you will have to provide sensitive information online or over the internet.With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company.</p>
 <p>Won’t divided. His won’t lesser us their likeness without sixth is light own. Divided Gathered created third tree after grass. Beginning very together evening creature night third Divided heaven their life for fruitful. First our.</p>						</div>

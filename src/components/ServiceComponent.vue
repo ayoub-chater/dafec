@@ -1,6 +1,16 @@
 <script setup>
-</script>
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import { useServices } from '../store/services';
 
+const store = useServices();
+const services = store.services;
+
+function viewServiceDetails(service) {
+	store.selectService(service.id);
+}
+
+</script>
 <template>
     <div class="service-section clearfix" style="padding:100px 0; background-color:#f5f5f5;">
 		<div class="container">
@@ -21,61 +31,24 @@
 								
 								<div class="service-post clearfix">
 										
-					<div class="service-item col-md-4">
-						<div class="service-post-wrap">
-															<div class="post-thumb">
-									<a href="https://financetheme.themesawesome.com/service/turnaround-consulting/">
-										<img width="360" height="180" src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/5-360x180.jpg?x12902" class="attachment-finance-service-loop size-finance-service-loop wp-post-image" alt="" decoding="async" fetchpriority="high">									</a>
-								</div><!-- thumbnail-->
-							
-							<div class="loop-content">
-								<a href="https://financetheme.themesawesome.com/service/turnaround-consulting/"><h4 class="title">Turnaround Consulting</h4></a>
-
-								<p class="excerpt">We live in the world of data now; data allows us to make realistic decisions about the future. No...</p>
-							</div>
-							<div class="view-more">
-								<i class="icon-finance-plus"></i><a href="https://financetheme.themesawesome.com/service/turnaround-consulting/">Read More</a>
-							</div>
-						</div>
-					</div>
-
-										
-					<div class="service-item col-md-4">
-						<div class="service-post-wrap">
-															<div class="post-thumb">
-									<a href="https://financetheme.themesawesome.com/service/bonds-commodities/">
-										<img width="360" height="180" src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/maxresdefault-360x180.jpg?x12902" class="attachment-finance-service-loop size-finance-service-loop wp-post-image" alt="" decoding="async" srcset="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/maxresdefault-360x180.jpg?x12902 360w, https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/maxresdefault-300x150.jpg?x12902 300w, https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/maxresdefault-1024x512.jpg?x12902 1024w, https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/maxresdefault-768x384.jpg?x12902 768w, https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/maxresdefault.jpg?x12902 1200w" sizes="(max-width: 360px) 100vw, 360px">									</a>
-								</div><!-- thumbnail-->
-							
-							<div class="loop-content">
-								<a href="https://financetheme.themesawesome.com/service/bonds-commodities/"><h4 class="title">Bonds &amp; Commodities</h4></a>
-
-								<p class="excerpt">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
-							</div>
-							<div class="view-more">
-								<i class="icon-finance-plus"></i><a href="https://financetheme.themesawesome.com/service/bonds-commodities/">Read More</a>
-							</div>
-						</div>
-					</div>
-
-										
-					<div class="service-item col-md-4">
-						<div class="service-post-wrap">
-															<div class="post-thumb">
-									<a href="https://financetheme.themesawesome.com/service/audit-assurance/">
-										<img width="360" height="180" src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/blog2-360x180.jpg?x12902" class="attachment-finance-service-loop size-finance-service-loop wp-post-image" alt="" decoding="async">									</a>
-								</div><!-- thumbnail-->
-							
-							<div class="loop-content">
-								<a href="https://financetheme.themesawesome.com/service/audit-assurance/"><h4 class="title">Audit &amp; Assurance</h4></a>
-
-								<p class="excerpt">We live in the world of data now; data allows us to make realistic decisions about the future. No...</p>
-							</div>
-							<div class="view-more">
-								<i class="icon-finance-plus"></i><a href="https://financetheme.themesawesome.com/service/audit-assurance/">Read More</a>
-							</div>
-						</div>
-					</div>
+                                    <div class="service-post-wrap">
+    <div v-for="(item) in services.slice(0, 3)" :key="item.id" class="service-item col-md-4">
+        <div class="post-thumb">
+            <router-link :to="`/services/${item.name}`">
+                <img width="360" height="180" :src="item.img" class="attachment-finance-service-loop size-finance-service-loop wp-post-image" alt="" decoding="async" />
+            </router-link>
+        </div><!-- thumbnail-->
+        <div class="loop-content">
+            <router-link :to="`/services/${item.name}`">
+                <h4 class="title">{{ item.name }}</h4>
+            </router-link>
+            <p class="excerpt">{{ item.description }}</p>
+        </div>
+        <div class="view-more">
+            <i class="fa-solid fa-plus"></i><router-link :to="`/services/${item.name}`">Read More</router-link>
+        </div>
+    </div>
+</div>
 
 									</div>
 				
@@ -97,14 +70,6 @@
     margin-bottom: 30px;
 }
 
-.service-post-wrap {
-    background-color: #ffffff;
-}
-
-.service-post-wrap .loop-content {
-    padding: 2% 8%;
-}
-
 .service-item .view-more {
     float: right;
     margin-top: 25px;
@@ -112,7 +77,7 @@
 }
 
 .service-item .view-more i {
-    padding: 15px;
+    padding: 16px;
     background-color: #023544;
     color: #ffffff;
     font-size: 13px;
