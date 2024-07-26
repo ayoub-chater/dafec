@@ -1,5 +1,23 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
 
+
+const isActive = ref(false);
+const services = ref(false);
+const caseStudies = ref(false);
+
+function showRightMenu(){
+    isActive.value = !isActive.value
+    console.log(isActive.value);
+}
+
+function showCaseStudies(){
+    caseStudies.value = !caseStudies.value
+}
+
+
+
+</script>
 <template>
     <header id="header" class="clearfix">
         <div class="site-header">
@@ -19,8 +37,8 @@
                             <div class="col-md-4">
                                 <div class="quote-link">
                                     <router-link
-                                        to="/contact">REQUEST
-                                        A QUOTE</router-link>
+                                        to="/contact">DEMANDER
+                                        UN DEVIS</router-link>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +52,7 @@
                         <div class="logo col-md-3">
                             <div class="logo-image">
                                 <router-link to="/"><img
-                                        src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/finance_logo.png?x12902"
+                                        src="../assets/images/logo-final.png"
                                         class="image-logo" alt="logo" /></router-link>
                             </div>
                         </div>
@@ -42,22 +60,23 @@
                         <div class="info col-md-9">
                             <ul>
                                 <li>
-                                    <i class="fa-regular fa-clock"></i>                                    <p>
-                                    <span class="heading">Contact Time</span>
-                                    <span>Mon-Sat: 9.00-18.00</span>
+                                    <i class="fa-regular fa-clock"></i>                                    
+                                    <p>
+                                        <span class="heading">Heures de Contact</span>
+                                        <span>Lun-Sam : 9.00-18.00</span>
                                     </p>
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-phone"></i>
                                     <p>
-                                        <span class="heading">Phone Number</span>
+                                        <span class="heading">Numéro de Téléphone</span>
                                         <span>(+212) 662 34 53 30</span>
                                     </p>
                                 </li>
                                 <li class="last">
                                     <i class="fa-solid fa-envelope-open-text"></i>
                                     <p>
-                                        <span class="heading">Contact Email</span>
+                                        <span class="heading">Email de Contact</span>
                                         <span>contact@dafec.ma</span>
                                     </p>
                                 </li>
@@ -91,7 +110,12 @@
                                     </li>
                                     <li id="menu-item-1934"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934">
-                                        <router-link to="/contact">Outils pratiques</router-link>
+                                        <router-link to="/outils-pratiques">Outils pratiques</router-link>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-2010" class="menu-item menu-item-type-post_type menu-item-object-finance-project current-menu-item menu-item-2010"><a href="#" aria-current="page">Agenda Fiscal</a></li>
+                                            <li id="menu-item-2008" class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2008"><a href="#">Liens utiles</a></li>
+                                            <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2009"><a href="#">Bases légales et règlementaires</a></li>
+                                        </ul>
                                     </li>
                                     <li id="menu-item-1934"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934">
@@ -102,67 +126,46 @@
 
                             <div class="right-section col-md-2">
                                 <div class="mobile-menu">
-                                    <button id="slide-buttons" class="icon-finance-bars"></button>
+                                    <button id="slide-buttons" @click="showRightMenu">
+                                        <i class="fa-solid fa-bars"></i>
+                                    </button>
                                 </div>
-
-                                <!-- MOBILE MENU START
+                            <!-- MOBILE MENU START
                             ============================================= -->
-                                <nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
-                                    <button class="c-menu__close icon-finance-close"></button>
+                            <nav id="c-menu--slide-right" :class="['c-menu', 'c-menu--slide-right', { 'is-active': isActive }]">
+                                    <button class="c-menu__close icon-finance-close" @click="showRightMenu">
+                                        <i class="fa-solid fa-x"></i>
+                                    </button>
 
                                     <ul id="menu-menu-1" class="sm menus">
                                         <li
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1592 current_page_item menu-item-1938">
-                                            <a href="https://financetheme.themesawesome.com/"
+                                            <a href="/"
                                                 aria-current="page">Accueil</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1937">
-                                            <a href="https://financetheme.themesawesome.com/about-2/">À propos</a>
+                                            <a href="/à-propos">À propos</a>
                                         </li>
                                         <li
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1936">
-                                            <a href="https://financetheme.themesawesome.com/services/">Nos services</a>
-                                            <ul class="sub-menu">
-                                                <li
-                                                    class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1942">
-                                                    <a
-                                                        href="https://financetheme.themesawesome.com/service/audit-assurance/">Audit
-                                                        &amp; Assurance</a>
-                                                </li>
-                                                <li
-                                                    class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1941">
-                                                    <a
-                                                        href="https://financetheme.themesawesome.com/service/bonds-commodities/">Bonds
-                                                        &amp; Commodities</a>
-                                                </li>
-                                                <li
-                                                    class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1945">
-                                                    <a
-                                                        href="https://financetheme.themesawesome.com/service/financial-projections/">Financial
-                                                        Projections</a>
-                                                </li>
-                                                <li
-                                                    class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1944">
-                                                    <a
-                                                        href="https://financetheme.themesawesome.com/service/strategic-planning/">Strategic
-                                                        Planning</a>
-                                                </li>
-                                                <li
-                                                    class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1940">
-                                                    <a
-                                                        href="https://financetheme.themesawesome.com/service/turnaround-consulting/">Turnaround
-                                                        Consulting</a>
-                                                </li>
-                                                <li
-                                                    class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1943">
-                                                    <a href="https://financetheme.themesawesome.com/service/trades-stocks/">Trades
-                                                        &amp; Stocks</a>
-                                                </li>
-                                            </ul>
+                                        :class="['menu-item', 'menu-item-type-post_type','menu-item-object-page' ,'menu-item-has-children','menu-item-1935']">
+                                        <div style="align-items: center;display: flex;justify-content: space-between;">
+                                                <router-link to="/nos-services">Nos services</router-link>
+                                                
+                                            </div>
+
                                         </li>
-                                        <li
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1935">
-                                            <a href="https://financetheme.themesawesome.com/case-studies/">Case Studies</a>
+
+                                        <li :class="['menu-item', 'menu-item-type-post_type','menu-item-object-page' ,'menu-item-has-children','menu-item-1939']">
+                                                <router-link to="/nos-solutions">Nos Solutions DAF</router-link>
+                                            
+                                        </li>
+                                        <li :class="['menu-item', 'menu-item-type-post_type','menu-item-object-page' ,'menu-item-has-children','menu-item-1934' , {'menu-selected': caseStudies}]">
+                                            <div style="align-items: center;display: flex;justify-content: space-between;">
+                                               <router-link href="/">Outils pratiques</router-link>
+                                               <i class="fa-solid fa-chevron-down" style="margin-right:10px;" @click="showCaseStudies"></i>
+
+                                            </div>
+
                                             <ul class="sub-menu">
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2010">
@@ -172,30 +175,18 @@
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2008">
                                                     <a
-                                                        href="https://financetheme.themesawesome.com/case/plan-for-your-future/">Plan
+                                                        href="/">Plan
                                                         For Your Future</a>
-                                                </li>
-                                                <li
-                                                    class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2009">
-                                                    <a
-                                                        href="https://financetheme.themesawesome.com/case/the-next-big-thing/">The
-                                                        Next Big Thing</a>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1939">
-                                            <a href="https://financetheme.themesawesome.com/blog/">Nos solutions DAF</a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1939">
-                                            <a href="https://financetheme.themesawesome.com/blog/">Outils pratiques</a>
-                                        </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934">
-                                            <a href="https://financetheme.themesawesome.com/contact/">Contact</a>
+                                            <a href="/contact">Contact</a>
                                         </li>
                                     </ul>
                                 </nav>
-                                <div id="slide-overlay" class="slide-overlay"></div>
-                                <!-- MOBILE MENU END -->
+                                <div id="slide-overlay" :class="['slide-overlay', { 'is-active': isActive }]" @click="showRightMenu"></div>
+                                <!-- MOBILE MENU END -->
                             </div>
                         </div>
                     </div>
@@ -205,11 +196,25 @@
     </header>
 </template>
 
+
 <style>
 /*-----------------------------------------------------------------------------------*/
 
 /*  2. Header
 /*-----------------------------------------------------------------------------------*/
+
+.fa-x:before {
+    content: "\58";
+    border: 1px solid gray;
+    padding: 13px;
+    border-radius: 50%;
+}
+
+#slide-buttons .fa-bars {
+    top: 18px;
+    position: absolute;
+    font-size: 24px ;
+}
 
 .router-link-active {
     color: #83a2aa !important;
@@ -227,7 +232,7 @@
 /* top bar */
 
 .top-bar {
-    background-color: #034153;
+    background-color: #0f2c6b;
 }
 
 .address-bar {
@@ -236,7 +241,7 @@
 
 .address-bar i {
     float: left;
-    color: #fed100;
+    color: #ffcf06;
     margin-right: 10px;
     font-size: 20px;
     line-height: 52px;
@@ -254,8 +259,8 @@
 
 .quote-link a {
     /* font-family: 'open_sansbold'; */
-    background-color: #fed100;
-    color: #034153;
+    background-color: #ffcf06;
+    color: #0f2c6b;
     padding: 15px 30px;
     display: inline-block;
     text-transform: uppercase;
@@ -386,7 +391,7 @@
     line-height: 60px;
     font-size: 19px;
     letter-spacing: -0.01em;
-    color: #034153;
+    color: #0f2c6b;
     -webkit-transition: opacity 0.25s ease-out;
     -moz-transition: opacity 0.25s ease-out;
     -ms-transition: opacity 0.25s ease-out;
@@ -472,7 +477,7 @@
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
-    background: #034153;
+    background: #0f2c6b;
     -webkit-transition: all 0.35s ease;
     -moz-transition: all 0.35s ease;
     -ms-transition: all 0.35s ease;
@@ -485,8 +490,8 @@
 }
 
 .main-menu ul ul li:hover>a {
-    background: #fed100;
-    color: #034153;
+    background: #ffcf06;
+    color: #0f2c6b;
 }
 
 .main-menu ul ul li:last-child>a,
@@ -505,7 +510,7 @@
 }
 
 #slide-buttons {
-    color: #034153;
+    color: #0f2c6b;
     height: 63px;
     width: 50px;
     line-height: 72px;
@@ -573,8 +578,8 @@
 }
 
 .c-menu__close:hover:before {
-    border: 1px solid #034153;
-    background-color: #034153;
+    border: 1px solid #0f2c6b;
+    background-color: #0f2c6b;
     color: #ffffff;
 }
 

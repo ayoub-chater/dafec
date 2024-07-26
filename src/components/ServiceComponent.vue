@@ -11,53 +11,59 @@ function viewServiceDetails(service) {
 }
 
 </script>
+
 <template>
     <div class="service-section clearfix" style="padding:100px 0; background-color:#f5f5f5;">
 		<div class="container">
 			<div class="row">
 
-								<div class="section-header clearfix">
+				<div class="section-header clearfix">
 					<div class="section-detail col-md-8">
-												<h2 class="section-title">Our Best Service</h2>
-												<div class="section-text">
+						<h2 class="section-title">Nos Meilleurs Services</h2>
+						<div class="section-text">
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
 						</div>
-											</div>
-					
-										<div class="section-button col-md-4 text-right vertical-center" style="top: 41px;">
-						<a href="https://financetheme.themesawesome.com/services/" class="button button-normal">View All Service</a>
 					</div>
-									</div>
-								
-								<div class="service-post clearfix">
-										
-                                    <div class="service-post-wrap">
-    <div v-for="(item) in services.slice(0, 3)" :key="item.id" class="service-item col-md-4">
-        <div class="post-thumb">
-            <router-link :to="`/services/${item.name}`">
-                <img width="360" height="180" :src="item.img" class="attachment-finance-service-loop size-finance-service-loop wp-post-image" alt="" decoding="async" />
-            </router-link>
-        </div><!-- thumbnail-->
-        <div class="loop-content">
-            <router-link :to="`/services/${item.name}`">
-                <h4 class="title">{{ item.name }}</h4>
-            </router-link>
-            <p class="excerpt">{{ item.description }}</p>
-        </div>
-        <div class="view-more">
-            <i class="fa-solid fa-plus"></i><router-link :to="`/services/${item.name}`">Read More</router-link>
-        </div>
-    </div>
-</div>
+					<div class="section-button col-md-4 text-right vertical-center" style="top: 41px;">
+						<a href="https://financetheme.themesawesome.com/services/" class="button button-normal">Voir Tous les Services</a>
+					</div>
+				</div>
 
-									</div>
-				
+				<div class="service-post clearfix">
+					<div class="service-post-wrap">
+						<div v-for="(item) in services.slice(0, 3)" :key="item.id" class="service-item col-md-4">
+							<div class="post-thumb">
+								<router-link :to="`/services/${item.name}`">
+									<img width="360" height="180" :src="item.img" class="attachment-finance-service-loop size-finance-service-loop wp-post-image" alt="" decoding="async" />
+								</router-link>
+							</div><!-- thumbnail-->
+							<div class="loop-content">
+								<router-link :to="`/services/${item.name}`">
+									<h4 class="title">{{ item.name }}</h4>
+								</router-link>
+								<p class="excerpt">{{ item.description }}</p>
+							</div>
+							<div class="view-more">
+								<i class="fa-solid fa-plus"></i><router-link :to="`/services/${item.name}`">Lire Plus</router-link>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
 </template>
 
+
+
 <style>
+
+.service-section {
+    background-image: url("src/assets/images/background.jpg") ;
+    background-size: cover ;
+}
+
 .service-section .service-post {
     margin-top: 40px;
 }
@@ -78,14 +84,14 @@ function viewServiceDetails(service) {
 
 .service-item .view-more i {
     padding: 16px;
-    background-color: #023544;
+    background-color: #375084;
     color: #ffffff;
     font-size: 13px;
 }
 
 .service-item .view-more a {
     padding: 15px 20px;
-    background-color: #034153;
+    background-color: #0f2c6b;
     color: #ffffff;
     text-transform: uppercase;
     line-height: 45px;
@@ -119,8 +125,8 @@ span.arrow {
 }
 
 .slogan-button a.button:hover {
-    background-color: #034153;
-    border-color: 1px solid #034153;
+    background-color: #0f2c6b;
+    border-color: 1px solid #0f2c6b;
     color: #ffffff;
     border-radius: 3px;
 }
@@ -158,12 +164,12 @@ span.arrow {
     left: 0;
     height: 2px;
     width: 10%;
-    background-color: #fed100;
+    background-color: #ffcf06;
 }
 
 .project-post-wrap .view-more a {
     padding: 10px 30px;
-    background-color: #034153;
+    background-color: #0f2c6b;
     color: #ffffff;
     text-transform: uppercase;
     line-height: 45px;
@@ -172,8 +178,8 @@ span.arrow {
 }
 
 .view-more a:hover {
-    background-color: #fed100;
-    color: #034153;
+    background-color: #ffcf06;
+    color: #0f2c6b;
 }
 
 /* single case */
@@ -208,7 +214,7 @@ span.arrow {
 }
 
 .team-text {
-    background-color: #034153;
+    background-color: #0f2c6b;
     padding: 4% 8%;
     color: #ffffff;
 }

@@ -41,6 +41,11 @@ function viewServiceDetails(service) {
 
 <style>
 
+.service-page {
+    background-image: url("src/assets/images/background.jpg") ;
+    background-size: cover ;
+}
+
 #content .service-page .container {
 display: flex;
 flex-wrap: wrap;
@@ -51,7 +56,7 @@ justify-content: space-between;
 flex: 1 1 30%;
 }
 
-.service-post-wrap {
+.service-page .service-post-wrap {
 background: #fff; 
 padding: 10px;
 border: 1px solid #ddd; 

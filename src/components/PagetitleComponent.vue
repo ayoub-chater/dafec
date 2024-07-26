@@ -22,7 +22,7 @@ console.log(route.value)
 
 <style>
 .page-title {
-    background-color: #fed100;
+    background-color: #ffcf06;
     padding: 30px 0;
 }
 
@@ -37,14 +37,14 @@ console.log(route.value)
 
 .page-title h3 {
     margin-bottom: 5px;
-    color: #034153;
+    color: #0f2c6b;
     font-size: 32px;
     font-size: 3.2rem;
 }
 
 .page-title p {
     margin: 0;
-    color: #034153;
+    color: #0f2c6b;
     font-style: italic;
 }
 </style>

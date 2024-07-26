@@ -111,9 +111,15 @@
 </template>
 
 <style>
+
+.faq-section {
+    background-image: url("src/assets/images/background.jpg") ;
+    background-size: cover ;
+}
+
 .faq-gallery .flex-direction-nav a {
-    background-color: #fed100;
-    color: #034153;
+    background-color: #ffcf06;
+    color: #0f2c6b;
     opacity: 1;
     text-align: center;
     bottom: 0;

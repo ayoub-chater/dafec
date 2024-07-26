@@ -1,18 +1,81 @@
 <script setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 const sliderClicked = ref(false);
+const scrollTarget = ref(null);
 
 function clickSlider() {
   sliderClicked.value = !sliderClicked.value;
   console.log(sliderClicked.value);
 }
+
+// onMounted(() => {
+//   const counterValues = ref(document.querySelectorAll('.counter-value'));
+//   const interval = .1;
+//   console.log(counterValues.value);
+//   // totalDuration = 2000;
+//   counterValues.value.forEach(value => {
+//     let startVal = 0;
+//     let endVal = parseInt(value.getAttribute('data-val'));
+//     let duration = interval / endVal;
+//     let counter = setInterval(() => {
+//       startVal +=1;
+//       value.textContent = startVal;
+//       if(startVal === endVal){
+//         clearInterval(counter);
+//       }
+//     } , duration)
+//   })
+  
+// })
+
+
+
+
+onMounted(() => {
+
+  const counterValues = ref(document.querySelectorAll('.counter-value'));
+  const totalDuration = 2000;
+
+  console.log(counterValues.value);
+  counterValues.value.forEach(value => {
+    let startVal = 0;
+    let endVal = parseInt(value.getAttribute('data-val'));
+    let increment = endVal / totalDuration; 
+
+    let animateCounter = () => {
+      let currentValue = 0;
+      let startTime = performance.now();
+     
+
+      let updateCounter = (currentTime) => {
+        let elapsedTime = currentTime - startTime;
+        currentValue = Math.min(endVal, Math.floor(increment * elapsedTime));
+        value.textContent = currentValue;
+
+        if (currentValue < endVal) {
+          requestAnimationFrame(updateCounter);
+        } else {
+          value.textContent = endVal; 
+        }
+      };
+
+      requestAnimationFrame(updateCounter);
+    };
+
+    animateCounter();
+    
+    
+
+  });
+});
 </script>
 
 <template>
   <div
-    class="review-section clearfix"
-    style="padding: 100px 0; background-color: #034153"
+    id="review"
+    class="review-section clearfix " ref="scrollTarget"
+    style="padding: 100px 0; background-color: #0f2c6b"
   >
     <div class="container">
       <div class="row">
@@ -30,41 +93,41 @@ function clickSlider() {
           <div class="the-counter row clearfix">
             <div class="counter-item col-md-6">
               <div class="counter-pic">
-                <i class="icon-finance-timer"></i>
+                <i class="fa-regular fa-clock"></i>
               </div>
 
               <div class="counter-text">
-                <p class="counter-value">41265</p>
+                <p class="counter-value" data-val="41265">0000</p>
                 <p class="counter-title">Hours in work</p>
               </div>
             </div>
             <div class="counter-item col-md-6">
               <div class="counter-pic">
-                <i class="icon-finance-coffee"></i>
+                <i class="fa-solid fa-mug-hot"></i>
               </div>
 
               <div class="counter-text">
-                <p class="counter-value">2565</p>
+                <p class="counter-value" data-val="1565">0000</p>
                 <p class="counter-title">Cups of coffee</p>
               </div>
             </div>
             <div class="counter-item col-md-6">
               <div class="counter-pic">
-                <i class="icon-finance-crown"></i>
+                <i class="fa-solid fa-crown"></i>
               </div>
 
               <div class="counter-text">
-                <p class="counter-value">3675</p>
+                <p class="counter-value" data-val="675">0000</p>
                 <p class="counter-title">Happy clients</p>
               </div>
             </div>
             <div class="counter-item col-md-6">
               <div class="counter-pic">
-                <i class="icon-finance-trophy"></i>
+                <i class="fa-solid fa-trophy"></i>
               </div>
 
               <div class="counter-text">
-                <p class="counter-value">4834</p>
+                <p class="counter-value" data-val='834'>0000</p>
                 <p class="counter-title">Total projects</p>
               </div>
             </div>
@@ -205,6 +268,57 @@ function clickSlider() {
 </template>
 
 <style>
+.counter-item {
+    margin-top: 20px;
+}
+
+.counter-text {
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 30px;
+}
+
+.counter-value {
+    font-family: 'fira_sansbold';
+    font-size: 40px;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.counter-text .counter-title {
+    font-family: 'open_sansbold';
+    color: #ffffff;
+}
+
+
+.counter-pic {
+    float: left;
+    text-align: center;
+    line-height: 85px;
+    height: 75px;
+    width: 75px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -ms-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+}
+
+.counter-item:hover .counter-pic {
+    background-color: #ffcf06;
+    border-radius: 3px;
+}
+
+.counter-pic i {
+    font-size: 35px;
+    font-size: 3.5rem;
+}
+
+
 /* testimonial section */
 
 .testimonial-content {
@@ -245,8 +359,8 @@ function clickSlider() {
 }
 
 .testimonial-slider .flex-direction-nav a {
-  background-color: #fed100;
-  color: #034153;
+  background-color: #ffcf06;
+  color: #0f2c6b;
   opacity: 1;
   text-align: center;
   bottom: 10px;

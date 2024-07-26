@@ -94,6 +94,12 @@
 </template>
 
 <style>
+
+.team-section {
+    background-image: url("src/assets/images/background.jpg") ;
+    background-size: cover ;
+}
+
 .team-section .section-title {
     text-align: center;
 }
@@ -105,7 +111,7 @@
 }
 
 .team-name {
-    background-color: #034153;
+    background-color: #0f2c6b;
     padding: 30px 0;
     text-align: center;
 }
@@ -195,9 +201,9 @@
 }
 
 .team-social li a:hover {
-    color: #034153;
-    border: 2px solid #fed100;
-    background-color: #fed100;
+    color: #0f2c6b;
+    border: 2px solid #ffcf06;
+    background-color: #ffcf06;
 }
 
 .team-name h4.name a,

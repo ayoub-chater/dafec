@@ -87,6 +87,7 @@ Sunday: Closed</p>									</div>
 </template>
 
 <style>
+
 #content {
     padding: 80px 0;
 }

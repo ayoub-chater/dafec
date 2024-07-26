@@ -4,7 +4,17 @@
 <template>
     <div class="blog-section clearfix" style="padding:100px 0;">
 		<div class="container">
-			
+			<div class="section-header clearfix">
+					<div class="section-detail col-md-8">
+						<h2 class="section-title">Nos Solutions DAF</h2>
+						<div class="section-text">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+						</div>
+					</div>
+					<div class="section-button col-md-4 text-right vertical-center" style="top: 41px;">
+						<a href="https://financetheme.themesawesome.com/services/" class="button button-normal">Voir Tous</a>
+					</div>
+				</div>
 			<div class="the-blog row clearfix">
 							
 				<article id="post-1767" class="blog-item col-md-6 post-1767 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-insurance">
@@ -61,6 +71,11 @@
 
 <style>
 
+.blog-section {
+    background-image: url("src/assets/images/background.jpg") ;
+    background-size: cover ;
+}
+
 .blog-section .blog-item .post-content-wrap {
     padding: 50px 30px;
     -webkit-transition: all 0.5s ease 0s;
@@ -84,7 +99,7 @@
     font-size: 25px;
     font-size: 2.5rem;
     margin: 0;
-    color: #034153;
+    color: #0f2c6b;
     line-height: 30px;
 }
 
@@ -113,7 +128,7 @@
 
 .author-name a {
     font-family: 'open_sansextrabold';
-    color: #034153;
+    color: #0f2c6b;
     font-weight: 900;
     text-transform: uppercase;
 }

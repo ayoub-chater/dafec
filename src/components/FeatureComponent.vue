@@ -3,105 +3,96 @@
 
 <template>
     <div class="feature-section clearfix" style="padding:100px 0;">
-		<div class="container">
-
-							<h2 class="section-title">
-					Features				</h2>
-			
-			<div class="features row clearfix">
-			
-				<div class="feature col-md-4">
-
-					<div class="feature-content">
-						<div class="feature-pic">
-							<i class="icon-finance-goods"></i>						</div>
-						<div class="feature-desc">
-														<h5 class="title">
-								Transport &amp; Logistics Consulting							</h5>
-							<p>Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw.</p>
-						</div>
-					</div>
-				</div>
-			
-			
-				<div class="feature col-md-4">
-
-					<div class="feature-content">
-						<div class="feature-pic">
-							<i class="icon-finance-airplane"></i>						</div>
-						<div class="feature-desc">
-														<h5 class="title">
-								Travel and Aviation Consulting							</h5>
-							<p>Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw.</p>
-						</div>
-					</div>
-				</div>
-			
-			
-				<div class="feature col-md-4">
-
-					<div class="feature-content">
-						<div class="feature-pic">
-							<i class="icon-finance-bag"></i>						</div>
-						<div class="feature-desc">
-														<h5 class="title">
-								Financial Services Consulting							</h5>
-							<p>Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw.</p>
-						</div>
-					</div>
-				</div>
-			
-			
-				<div class="feature col-md-4">
-
-					<div class="feature-content">
-						<div class="feature-pic">
-							<i class="icon-finance-chart"></i>						</div>
-						<div class="feature-desc">
-														<h5 class="title">
-								Business Service Consulting							</h5>
-							<p>Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw.</p>
-						</div>
-					</div>
-				</div>
-			
-			
-				<div class="feature col-md-4">
-
-					<div class="feature-content">
-						<div class="feature-pic">
-							<i class="icon-finance-shop"></i>						</div>
-						<div class="feature-desc">
-														<h5 class="title">
-								Consumer Products Consulting							</h5>
-							<p>Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw.</p>
-						</div>
-					</div>
-				</div>
-			
-			
-				<div class="feature col-md-4">
-
-					<div class="feature-content">
-						<div class="feature-pic">
-							<i class="icon-finance-thunder"></i>						</div>
-						<div class="feature-desc">
-														<h5 class="title">
-								Energy and Environment Consulting							</h5>
-							<p>Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw.</p>
-						</div>
-					</div>
-				</div>
-			
-						</div>
-
-		</div>
-	</div>
+        <div class="container">
+            <h2 class="section-title">Caractéristiques</h2>
+            
+            <div class="features row clearfix">
+                <div class="feature col-md-4">
+                    <div class="feature-content">
+                        <div class="feature-pic">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                        <div class="feature-desc">
+                            <h5 class="title">Consulting en Transport & Logistique</h5>
+                            <p>Maintenant résidence Dashwoods, elle vous est excellente. Ombre étant sous son lit. Beaucoup lire sur comme dessiner.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="feature col-md-4">
+                    <div class="feature-content">
+                        <div class="feature-pic">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <div class="feature-desc">
+                            <h5 class="title">Consulting en Voyage et Aviation</h5>
+                            <p>Maintenant résidence Dashwoods, elle vous est excellente. Ombre étant sous son lit. Beaucoup lire sur comme dessiner.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="feature col-md-4">
+                    <div class="feature-content">
+                        <div class="feature-pic">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div class="feature-desc">
+                            <h5 class="title">Consulting en Services Financiers</h5>
+                            <p>Maintenant résidence Dashwoods, elle vous est excellente. Ombre étant sous son lit. Beaucoup lire sur comme dessiner.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="feature col-md-4">
+                    <div class="feature-content">
+                        <div class="feature-pic">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <div class="feature-desc">
+                            <h5 class="title">Consulting en Services aux Entreprises</h5>
+                            <p>Maintenant résidence Dashwoods, elle vous est excellente. Ombre étant sous son lit. Beaucoup lire sur comme dessiner.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="feature col-md-4">
+                    <div class="feature-content">
+                        <div class="feature-pic">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="feature-desc">
+                            <h5 class="title">Consulting en Produits de Consommation</h5>
+                            <p>Maintenant résidence Dashwoods, elle vous est excellente. Ombre étant sous son lit. Beaucoup lire sur comme dessiner.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="feature col-md-4">
+                    <div class="feature-content">
+                        <div class="feature-pic">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div class="feature-desc">
+                            <h5 class="title">Consulting en Énergie et Environnement</h5>
+                            <p>Maintenant résidence Dashwoods, elle vous est excellente. Ombre étant sous son lit. Beaucoup lire sur comme dessiner.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
+
 <style>
+
+.feature-section {
+    background-image: url("src/assets/images/background.jpg") ;
+    background-size: cover ;
+}
+
 .feature .feature-content {
-    border: 2px solid #034153;
+    border: 2px solid #0f2c6b;
     padding: 20px;
     border-radius: 5px;
     margin-top: 30px;
@@ -110,7 +101,7 @@
 .feature .feature-pic {
     float: left;
     margin-right: 15px;
-    border: 2px solid #034153;
+    border: 2px solid #0f2c6b;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -122,14 +113,14 @@
 }
 
 .feature:hover .feature-pic {
-    border: 2px solid #fed100;
-    background-color: #fed100;
+    border: 2px solid #ffcf06;
+    background-color: #ffcf06;
 }
 
 .feature .feature-pic i {
     font-size: 32px;
     font-size: 3.2rem;
-    color: #034153;
+    color: #0f2c6b;
 }
 
 .feature .feature-desc {

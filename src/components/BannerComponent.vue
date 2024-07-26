@@ -67,10 +67,10 @@ onMounted(() => {
             font-size: 62px;
             font-weight: 800;
             width: 70%;
-            color: #034153;
+            color: #0f2c6b;
             font-family: 'fira sans'
             "
-            >Lets Start Future Financial Plan</h1>
+            >Commençons le Plan Financier du Futur</h1>
             <p
             class="banner-sub" 
             style=
@@ -82,12 +82,12 @@ onMounted(() => {
             font-weight: bold;
             margin-top: 40px;
             ">
-                We provide financial guidance over 20 years with our best expert and ensure you the best result from us
+                Nous fournissons des conseils financiers depuis plus de 20 ans avec nos meilleurs experts et nous vous assurons les meilleurs résultats
             </p>
           </div>
           <div class="button-container">
-            <router-link to="/à-propos"><button class="btn btn-primary">Learn More</button></router-link>
-            <router-link to="/contact"><button class="btn btn-secondary">Contact Us</button></router-link>
+            <router-link to="/à-propos"><button class="btn btn-primary">En Savoir Plus</button></router-link>
+            <router-link to="/contact"><button class="btn btn-secondary">Nous Contacter</button></router-link>
           </div>
         </div>
       </div>
@@ -95,10 +95,11 @@ onMounted(() => {
   </div>
 </template>
 
+
 <style >
 :root{
-    --primary-color: #FED100;
-    --secondary-color: #034135;
+    --primary-color: #ffcf06;
+    --secondary-color: #375084;
 }
 
 .btn-secondary {

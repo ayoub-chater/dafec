@@ -4,45 +4,53 @@
 
 <template>
     <div class="about-section clearfix" style="padding:100px 0;">
-		<div class="container">
-			<div class="row">
-				
-								<div class="about-images col-md-6">
-					<div class="about-image-wrap row clearfix">
-											<div class="about-image col-md-6">
-							<img src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/06/slide2-285x285.jpg?x12902" alt="about-img">
-						</div>
-											<div class="about-image col-md-6">
-							<img src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/gallery2-285x285.jpg?x12902" alt="about-img">
-						</div>
-											<div class="about-image col-md-6">
-							<img src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/gallery3-285x285.jpg?x12902" alt="about-img">
-						</div>
-											<div class="about-image col-md-6">
-							<img src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/gallery1-285x285.jpg?x12902" alt="about-img">
-						</div>
-										</div>
-				</div>
-				
-				<div class="about-desc col-md-6">
-											<h2 class="section-title">
-												Notre Objectif						</h2>
-											<div class="about-text">
-							<p>With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company as often you will have to provide sensitive information online or over the internet.With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company.</p>
-<p>Won’t divided. His won’t lesser us their likeness without sixth is light own. Divided Gathered created third tree after grass. Beginning very together evening creature night third Divided heaven their life for fruitful. First our.</p>						</div>
-										<div class="about-button">
-						<a href="https://financetheme.themesawesome.com/contact/" class="button button-normal">
-							Contact Us						</a>
-					</div>
-									</div>
+        <div class="container">
+            <div class="row">
+                
+                <div class="about-images col-md-6">
+                    <div class="about-image-wrap row clearfix">
+                        <div class="about-image col-md-6">
+                            <img src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/06/slide2-285x285.jpg?x12902" alt="image à propos">
+                        </div>
+                        <div class="about-image col-md-6">
+                            <img src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/gallery2-285x285.jpg?x12902" alt="image à propos">
+                        </div>
+                        <div class="about-image col-md-6">
+                            <img src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/gallery3-285x285.jpg?x12902" alt="image à propos">
+                        </div>
+                        <div class="about-image col-md-6">
+                            <img src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/05/gallery1-285x285.jpg?x12902" alt="image à propos">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-desc col-md-6">
+                    <h2 class="section-title">
+                        Notre Objectif
+                    </h2>
+                    <div class="about-text">
+                        <p>Pour tout produit financier que vous achetez, il est important de savoir que vous obtenez les meilleurs conseils d'une entreprise réputée, car vous devrez souvent fournir des informations sensibles en ligne ou sur Internet. Il est essentiel de s'assurer que vous recevez les meilleurs conseils d'une entreprise de confiance.</p>
+                        <p>Ne sera pas divisé. Son ne divisera pas leur ressemblance sans six est lumière propre. Divisé Réuni créé troisième arbre après herbe. Début très ensemble soirée créature nuit troisième Divisé ciel leur vie pour fructueux. Premier notre.</p>
+                    </div>
+                    <div class="about-button">
+                        <a href="https://financetheme.themesawesome.com/contact/" class="button button-normal">
+                            Contactez-nous
+                        </a>
+                    </div>
+                </div>
 
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <style>
 /* about section */
+
+.about-section {
+    background-image: url("src/assets/images/background.jpg") ;
+    background-size: cover ;
+}
 
 .about-section {
     background-color: #fafafa;
@@ -81,6 +89,6 @@
     font-size: 18px;
     margin-right: 10px;
     vertical-align: middle;
-    color: #034153;
+    color: #0f2c6b;
 }
 </style>

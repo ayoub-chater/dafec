@@ -195,7 +195,7 @@ p.post-nav-links {
     margin: 20px 0 30px;
     padding: 15px;
     background-color: #f2f2f2;
-    border-left: 4px solid #034153;
+    border-left: 4px solid #0f2c6b;
 }
 
 .tag-wrapper i {
@@ -216,9 +216,9 @@ p.post-nav-links {
     margin: 0 5px;
     font-size: 16px;
     border-radius: 3px;
-    border: 2px solid #034153;
+    border: 2px solid #0f2c6b;
     background-color: transparent;
-    color: #034153;
+    color: #0f2c6b;
 }
 
 .pagination a {
@@ -228,15 +228,15 @@ p.post-nav-links {
     margin: 0 5px;
     font-size: 16px;
     border-radius: 3px;
-    border: 2px solid #034153;
-    background-color: #034153;
+    border: 2px solid #0f2c6b;
+    background-color: #0f2c6b;
     color: #ffffff;
 }
 
 .pagination a:hover {
-    border: 2px solid #fed100;
-    background-color: #fed100;
-    color: #034153;
+    border: 2px solid #ffcf06;
+    background-color: #ffcf06;
+    color: #0f2c6b;
 }
 
 /* author */
@@ -297,8 +297,8 @@ p.post-nav-links {
 }
 
 .slogan-button a.button:hover {
-    background-color: #034153;
-    border-color: 1px solid #034153;
+    background-color: #0f2c6b;
+    border-color: 1px solid #0f2c6b;
     color: #ffffff;
     border-radius: 3px;
 }
@@ -337,12 +337,12 @@ p.post-nav-links {
     left: 0;
     height: 2px;
     width: 10%;
-    background-color: #fed100;
+    background-color: #ffcf06;
 }
 
 .project-post-wrap .view-more a {
     padding: 10px 30px;
-    background-color: #034153;
+    background-color: #0f2c6b;
     color: #ffffff;
     text-transform: uppercase;
     line-height: 45px;
@@ -351,8 +351,8 @@ p.post-nav-links {
 }
 
 .view-more a:hover {
-    background-color: #fed100;
-    color: #034153;
+    background-color: #ffcf06;
+    color: #0f2c6b;
 }
 
 /* single case */
@@ -387,7 +387,7 @@ p.post-nav-links {
 }
 
 .team-text {
-    background-color: #034153;
+    background-color: #0f2c6b;
     padding: 4% 8%;
     color: #ffffff;
 }
@@ -435,7 +435,7 @@ p.post-nav-links {
 /* widget contact */
 
 .sidebar-contact {
-    background-color: #034153;
+    background-color: #0f2c6b;
     padding: 30px 20px;
 }
 
