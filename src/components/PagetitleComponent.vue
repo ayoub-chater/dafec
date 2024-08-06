@@ -1,24 +1,60 @@
 <script setup>
 import { useRoute } from 'vue-router';
-import { ref } from 'vue';
-const route = ref(useRoute().path.slice(1));
-console.log(route.value)
-</script>
+import { ref, computed, watch } from 'vue';
+import { useServices } from '../store/services';
 
-<template>
+const store = useServices();
+const route = useRoute();
+
+const currentPath = ref(route.path.slice(1));
+
+const formattedRoute = computed(() => {
+    return currentPath.value.charAt(0).toUpperCase() + currentPath.value.slice(1);
+    });
+
+    watch(
+    () => route.path,
+    (newPath) => {
+        currentPath.value = newPath.slice(1);
+        console.log(currentPath.value);
+    }
+    );
+
+    </script>
+
+    <template>
     <div class="page-title">
-			<div class="title-wrap container">
-				<div class="left-side">
-					<h3 class="wow fadeInUp animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">{{ route.charAt(0).toUpperCase() + route.slice(1) }}</h3>
-					
-										<p class="wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.7s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.7s;">Partnership Pay for Success project</p>
-									</div>
+        <div class="title-wrap container">
+        <div class="left-side">
+            <h3 class="wow fadeInUp animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
+            {{ formattedRoute }}
+            </h3>
+            
+            <p class="wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.7s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.7s;">
+            Projet de partenariat "Pay for Success"
+            </p>
+        </div>
 
-				<div class="right-side">
-					<div class="breadcrumbs"><p>You Are Here : <span><a href="https://financetheme.themesawesome.com/">            Home            </a></span><span class="arrow"><i class="icon-finance-arrow-right"></i></span><span>{{ route.charAt(0).toUpperCase() + route.slice(1) }}</span></p></div>				</div>
-			</div>
-		</div>
+        <div class="right-side">
+            <div class="breadcrumbs">
+            <p>
+                Vous êtes ici : 
+                <span>
+                <router-link to="/">Accueil / </router-link>
+                </span>
+                <span class="arrow">
+                <i class="icon-finance-arrow-right"></i>
+                </span>
+                <span>{{ formattedRoute }}</span>
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
 </template>
+
+
+
 
 <style>
 .page-title {

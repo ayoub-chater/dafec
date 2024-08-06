@@ -8,6 +8,9 @@
 
 									<h2 class="section-title">
 										Notre équipe					</h2>
+										<p class="margin align">Notre cabinet est porté par une équipe dynamique, soucieuse de proposer un suivi régulier, un accompagnement adapté à vos besoins et des conseils spécialisés. 
+Nos comptables, nos fiscalistes, nos experts comptables sont à votre écoute. 
+Ensemble, relevons les défis de votre secteur</p>
 				
 				
 				<div class="team-member col-md-4">
@@ -18,10 +21,10 @@
 							<div class="team-detail">
 								<div class="team-desc">
 									Built purse maids cease her ham new seven among and. Pulled coming wooded tended...
-									<ul class="team-social clearfix">
-																					<li><a href="http://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a></li>
-																					<li><a href="http://www.twitter.com" target="_blank"><i class="icon-twitter"></i></a></li>
-																					<li><a href="http://www.dribbble.com" target="_blank"><i class="icon-dribbble"></i></a></li>
+									<ul class="team-social clearfixx">
+																					<li><a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+																					<li><a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+																					<li><a href="http://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
 																			</ul>
 								</div>
 							</div>
@@ -44,10 +47,10 @@
 							<div class="team-detail">
 								<div class="team-desc">
 									Believing neglected so so allowance existence departure in. In design active temper be uneasy....
-									<ul class="team-social clearfix">
-																					<li><a href="http://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a></li>
-																					<li><a href="http://www.twitter.com" target="_blank"><i class="icon-twitter"></i></a></li>
-																					<li><a href="http://www.dribbble.com" target="_blank"><i class="icon-dribbble"></i></a></li>
+									<ul class="team-social clearfixx">
+										<li><a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+																					<li><a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+																					<li><a href="http://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
 																			</ul>
 								</div>
 							</div>
@@ -70,10 +73,10 @@
 							<div class="team-detail">
 								<div class="team-desc">
 									Built purse maids cease her ham new seven among and. Pulled coming wooded tended...
-									<ul class="team-social clearfix">
-																					<li><a href="http://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a></li>
-																					<li><a href="http://www.twitter.com" target="_blank"><i class="icon-twitter"></i></a></li>
-																					<li><a href="http://www.dribbble.com" target="_blank"><i class="icon-dribbble"></i></a></li>
+									<ul class="team-social clearfixx">
+										<li><a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+																					<li><a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+																					<li><a href="http://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
 																			</ul>
 								</div>
 							</div>
@@ -94,6 +97,25 @@
 </template>
 
 <style>
+
+ul.clearfixx {
+    display: flex;
+    list-style-type: none;
+    width: fit-content;
+    gap: 10px;
+    margin: 40px auto;
+    padding: 0 !important;
+    justify-content: center;
+    text-align: center;
+}
+
+.margin {
+	margin: 25px 0 ;
+}
+
+.align {
+	text-align: center;
+}
 
 .team-section {
     background-image: url("src/assets/images/background.jpg") ;

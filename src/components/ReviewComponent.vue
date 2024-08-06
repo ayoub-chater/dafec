@@ -80,12 +80,13 @@ onMounted(() => {
     <div class="container">
       <div class="row">
         <div class="counter-review col-md-6">
-          <h2 class="section-title white">Why People Choose Us</h2>
+          <h2 class="section-title white">Nos Valeurs</h2>
 
           <div class="review-text">
             <p>
-              Now residence dashwoods she excellent you. Shade being under his
-              bed her. Much read on as draw.
+              DAFEC s'engage envers l'excellence et la satisfaction de ses clients.
+              Nous proposons des solutions comptables sur mesure et proposons à nos clients une approche professionnelle et rigoureuse.
+              Faites confiance à dafec pour construire un partenariat durable.
             </p>
           </div>
 
@@ -97,8 +98,8 @@ onMounted(() => {
               </div>
 
               <div class="counter-text">
-                <p class="counter-value" data-val="41265">0000</p>
-                <p class="counter-title">Hours in work</p>
+                <p class="counter-title" data-val="41265">Excellency</p>
+                <!-- <p class="counter-title">Hours in work</p> -->
               </div>
             </div>
             <div class="counter-item col-md-6">
@@ -107,8 +108,8 @@ onMounted(() => {
               </div>
 
               <div class="counter-text">
-                <p class="counter-value" data-val="1565">0000</p>
-                <p class="counter-title">Cups of coffee</p>
+                <p class="counter-title" data-val="1565">Security</p>
+                <!-- <p class="counter-title">Cups of coffee</p> -->
               </div>
             </div>
             <div class="counter-item col-md-6">
@@ -117,8 +118,8 @@ onMounted(() => {
               </div>
 
               <div class="counter-text">
-                <p class="counter-value" data-val="675">0000</p>
-                <p class="counter-title">Happy clients</p>
+                <p class="counter-title" data-val="675">Integrity</p>
+                <!-- <p class="counter-title">Happy clients</p> -->
               </div>
             </div>
             <div class="counter-item col-md-6">
@@ -127,8 +128,8 @@ onMounted(() => {
               </div>
 
               <div class="counter-text">
-                <p class="counter-value" data-val='834'>0000</p>
-                <p class="counter-title">Total projects</p>
+                <p class="counter-title" data-val='834'>Ethics</p>
+                <!-- <p class="counter-title">Total projects</p> -->
               </div>
             </div>
           </div>
@@ -268,8 +269,11 @@ onMounted(() => {
 </template>
 
 <style>
+
 .counter-item {
     margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .counter-text {
@@ -290,6 +294,7 @@ onMounted(() => {
 .counter-text .counter-title {
     font-family: 'open_sansbold';
     color: #ffffff;
+    font-size: 20px;
 }
 
 
@@ -306,6 +311,7 @@ onMounted(() => {
     -ms-transition: all .35s ease;
     -o-transition: all .35s ease;
     transition: all .35s ease;
+    margin-right: 30px;
 }
 
 .counter-item:hover .counter-pic {

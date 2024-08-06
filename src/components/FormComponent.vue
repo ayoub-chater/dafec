@@ -1,4 +1,31 @@
 <script setup>
+import { ref } from "vue";
+import { useContact } from "../store/contact";
+
+const contactStore = useContact();
+const message = ref(null);
+
+const form = ref({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+});
+
+const sendMail = async () => {
+    await contactStore.sendMail(form.value);
+    message.value = contactStore.message;
+    console.log(message.value);
+};
+const hideModal = () => {
+    message.value = !message.value;
+    form.value.name = "";
+    form.value.email = "";
+    form.value.phone = "";
+    form.value.subject = "";
+    form.value.message = "";
+};
 </script>
 
 <template>
@@ -6,9 +33,11 @@
         <div class="container">
             <div class="row">
                 <div class="form-html vertical-center col-md-6" style="top: 94px;">
-                    <img src="https://d2ktnx5kgug713.cloudfront.net/wp-content/uploads/sites/20/2016/06/logo-white.png?x12902" alt="logo-white">
-                    <h2>Demandez une Consultation Gratuite</h2>
-                    <p>Souhaitez-vous parler à l'un de nos conseillers financiers par téléphone ? Soumettez simplement vos coordonnées et nous vous contacterons sous peu. Vous pouvez également nous envoyer un e-mail si vous préférez.</p>
+                    <img src="../assets/images/logo_white.png" alt="logo-white">
+                    <h2>Demandez une consultation gratuite</h2>
+                    <p>Souhaitez-vous parler à l'un de nos conseillers financiers par téléphone ? Soumettez simplement vos
+                        coordonnées et nous vous contacterons sous peu. Vous pouvez également nous envoyer un e-mail si vous
+                        préférez.</p>
                 </div>
 
                 <div class="the-form col-md-6">
@@ -17,41 +46,49 @@
                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                             <ul></ul>
                         </div>
-                        <form action="/#wpcf7-f1574-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-                            <div style="display: none;">
-                                <input type="hidden" name="_wpcf7" value="1574">
-                                <input type="hidden" name="_wpcf7_version" value="5.9.7">
-                                <input type="hidden" name="_wpcf7_locale" value="en_US">
-                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1574-o1">
-                                <input type="hidden" name="_wpcf7_container_post" value="0">
-                                <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-                            </div>
+                        <form @submit.prevent="sendMail" method="post" class="form init">
                             <p class="name">
-                                <span class="wpcf7-form-control-wrap" data-name="your-name">
-                                    <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Votre Nom" value="" type="text" name="your-name">
+                                <span class="-form-control-wrap">
+                                    <input v-model="form.name" size="40" maxlength="400"
+                                        class="-form-control text validates-as-required" placeholder="Votre Nom" type="text"
+                                        name="name" />
                                 </span>
                             </p>
                             <p class="email">
-                                <span class="wpcf7-form-control-wrap" data-name="your-email">
-                                    <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Votre Email" value="" type="email" name="your-email">
+                                <span class="form-control-wrap">
+                                    <input v-model="form.email" size="40" maxlength="400"
+                                        class="-form-control email text validates-as-email" placeholder="Votre Email"
+                                        type="email" name="email" />
+                                </span>
+                            </p>
+                            <p class="telephone">
+                                <span class="form-control-wrap">
+                                    <input v-model="form.phone" size="40" maxlength="400" class="-form-control -text"
+                                        aria-invalid="false" placeholder="Votre telephone" type="text" name="phone" />
                                 </span>
                             </p>
                             <p class="subject">
-                                <span class="wpcf7-form-control-wrap" data-name="your-subject">
-                                    <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Sujet" value="" type="text" name="your-subject">
+                                <span class="form-control-wrap">
+                                    <input v-model="form.subject" size="40" maxlength="400" class="-form-control -text"
+                                        aria-invalid="false" placeholder="Sujet" type="text" name="subject" />
                                 </span>
                             </p>
                             <p>
-                                <span class="wpcf7-form-control-wrap" data-name="your-message">
-                                    <textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Votre Message" name="your-message"></textarea>
+                                <span class="form-control-wrap">
+                                    <textarea v-model="form.message" cols="40" rows="10" maxlength="2000"
+                                        class="-form-control textarea" placeholder="Votre Message"
+                                        name="message"></textarea>
                                 </span>
                             </p>
-                            <p class="submit">
-                                <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Envoyer">
-                                <span class="wpcf7-spinner"></span>
-                            </p>
-                            <div class="wpcf7-response-output" aria-hidden="true"></div>
+
+                            <input class="-form-control submit" type="submit" value="Envoyer" />
                         </form>
+                        <div class="alert alert-primary alert-dismissible contact-alert" v-if="message">
+                            <button type="button" class="close" data-dismiss="alert" @click="hideModal">
+                                &times;
+                            </button>
+                            {{ contactStore.message }}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -61,6 +98,17 @@
 
 
 <style>
+
+.form-alert {
+    background-color: #ffcf06;
+    color: #375084;
+    margin-top: 10px;
+}
+
+.form-html img {
+    width: 260px;
+}
+
 .form-html h2 {
     margin-top: 50px;
     color: #ffffff;

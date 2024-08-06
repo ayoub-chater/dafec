@@ -29,8 +29,12 @@
                         Notre Objectif
                     </h2>
                     <div class="about-text">
-                        <p>Pour tout produit financier que vous achetez, il est important de savoir que vous obtenez les meilleurs conseils d'une entreprise réputée, car vous devrez souvent fournir des informations sensibles en ligne ou sur Internet. Il est essentiel de s'assurer que vous recevez les meilleurs conseils d'une entreprise de confiance.</p>
-                        <p>Ne sera pas divisé. Son ne divisera pas leur ressemblance sans six est lumière propre. Divisé Réuni créé troisième arbre après herbe. Début très ensemble soirée créature nuit troisième Divisé ciel leur vie pour fructueux. Premier notre.</p>
+                        <p class="margin-bottom-25">DAFEC est un cabinet d'expertise comptable basé à Casablanca et inscrit à l'ordre des experts comptables de Casablanca et spécialisé dans les domaines de l'expertise comptable.3</p>
+                        <h4 class="margin-bottom-25">DAFEC se démarque par:</h4>
+                        <ul>
+                            <li>- Des solutions inovantes et sur mesure (DAF extrenalisé ou de transition)</li>
+                            <li class="width">- Des conseils fiscaux spécialisés tenant compte des complexités fiscales nationales et internationales</li>
+                        </ul>    
                     </div>
                     <div class="about-button">
                         <a href="https://financetheme.themesawesome.com/contact/" class="button button-normal">
@@ -46,6 +50,20 @@
 
 <style>
 /* about section */
+
+p {
+    line-height: 2 ;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+@media (min-width: 992px) {
+    .width {
+        width: 650px ;
+    }
+}
 
 .about-section {
     background-image: url("src/assets/images/background.jpg") ;

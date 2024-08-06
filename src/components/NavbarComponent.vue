@@ -28,7 +28,7 @@ function showCaseStudies(){
                             <div class="col-md-8">
                                 <div class="address-bar">
                                     <i class="fa-solid fa-location-dot"></i>
-                                    <p>1010 Avenue of the Moon, New York, NY 10018 US.</p>
+                                    <p>Résidence EDEN CALIFORNIE 3 Etg n° 9, Bd HAIFA. Casablanca</p>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ function showCaseStudies(){
                                     <i class="fa-regular fa-clock"></i>                                    
                                     <p>
                                         <span class="heading">Heures de Contact</span>
-                                        <span>Lun-Sam : 9.00-18.00</span>
+                                        <span>Lun-Ven : 9.00-18.00</span>
                                     </p>
                                 </li>
                                 <li>
@@ -98,7 +98,7 @@ function showCaseStudies(){
                                     </li>
                                     <li id="menu-item-1937"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1937">
-                                        <router-link to="/à-propos">À propos</router-link>
+                                        <router-link to="/a-propos">À propos</router-link>
                                     </li>
                                     <li id="menu-item-1936"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1936">
@@ -106,7 +106,7 @@ function showCaseStudies(){
                                     </li>
                                     <li id="menu-item-1934"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934">
-                                        <router-link to="/nos-solutions">Nos Solutions DAF</router-link>
+                                        <router-link to="/nos-solutions">Nos solutions DAF</router-link>
                                     </li>
                                     <li id="menu-item-1934"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934">
@@ -140,14 +140,13 @@ function showCaseStudies(){
                                     <ul id="menu-menu-1" class="sm menus">
                                         <li
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1592 current_page_item menu-item-1938">
-                                            <a href="/"
-                                                aria-current="page">Accueil</a>
+                                            <router-link to="/">Accueil</router-link>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1937">
-                                            <a href="/à-propos">À propos</a>
+                                            <router-link to="/a-propos">À propos</router-link>
                                         </li>
                                         <li
-                                        :class="['menu-item', 'menu-item-type-post_type','menu-item-object-page' ,'menu-item-has-children','menu-item-1935']">
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1935">
                                         <div style="align-items: center;display: flex;justify-content: space-between;">
                                                 <router-link to="/nos-services">Nos services</router-link>
                                                 
@@ -155,33 +154,36 @@ function showCaseStudies(){
 
                                         </li>
 
-                                        <li :class="['menu-item', 'menu-item-type-post_type','menu-item-object-page' ,'menu-item-has-children','menu-item-1939']">
-                                                <router-link to="/nos-solutions">Nos Solutions DAF</router-link>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1939">
+                                                <router-link to="/nos-solutions">Nos solutions DAF</router-link>
                                             
                                         </li>
-                                        <li :class="['menu-item', 'menu-item-type-post_type','menu-item-object-page' ,'menu-item-has-children','menu-item-1934' , {'menu-selected': caseStudies}]">
+                                        <li :class="['menu-item', 'menu-item-type-post_type','menu-item-object-page' ,'menu-item-has-children','menu-item-1935' , {'menu-selected': caseStudies}]">
                                             <div style="align-items: center;display: flex;justify-content: space-between;">
-                                               <router-link href="/">Outils pratiques</router-link>
-                                               <i class="fa-solid fa-chevron-down" style="margin-right:10px;" @click="showCaseStudies"></i>
+                                                <router-link to="/nos-solutions">Outils pratiques</router-link>
+                                                <i class="fa-solid fa-chevron-down" style="margin-right:10px;" @click="showCaseStudies"></i>
 
                                             </div>
 
                                             <ul class="sub-menu">
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2010">
-                                                    <a href="https://financetheme.themesawesome.com/case/personal-banking/">Personal
-                                                        Banking</a>
+                                                    <router-link to="/outils-pratiques">Agenda Fiscal</router-link>
                                                 </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2008">
-                                                    <a
-                                                        href="/">Plan
-                                                        For Your Future</a>
+                                                    <router-link
+                                                        to="/outils-pratiques">Liens utiles</router-link>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2008">
+                                                    <router-link
+                                                        to="/outils-pratiques">Bases légales et règlementaires</router-link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934">
-                                            <a href="/contact">Contact</a>
+                                            <router-link to="/contact">Contact</router-link>
                                         </li>
                                     </ul>
                                 </nav>
@@ -198,10 +200,14 @@ function showCaseStudies(){
 
 
 <style>
-/*-----------------------------------------------------------------------------------*/
 
 /*  2. Header
-/*-----------------------------------------------------------------------------------*/
+/-----------------------------------------------------------------------------------*/
+
+.address-bar {
+    align-items: center;
+    display: flex;
+}
 
 .fa-x:before {
     content: "\58";
@@ -214,6 +220,7 @@ function showCaseStudies(){
     top: 18px;
     position: absolute;
     font-size: 24px ;
+    border-left: 1px solid #e8e8e8;
 }
 
 .router-link-active {
@@ -316,9 +323,6 @@ function showCaseStudies(){
     font-size: 14px;
 }
 
-.top-header ul li p span.heading {
-    /* font-family: 'open_sansregular'; */
-}
 
 .site-header .navigation {
     border-top: 1px solid #d9e3e5;
@@ -499,8 +503,6 @@ function showCaseStudies(){
     border-bottom: 0;
 }
 
-/*-----------------------------------------------------------------------------------*/
-
 /*  3. MOBILE NAVIGATION
 /*-----------------------------------------------------------------------------------*/
 
@@ -603,24 +605,7 @@ function showCaseStudies(){
     margin-top: 10px;
 }
 
-.c-menu--slide-right>ul li.menu-item-has-children:after,
-.c-menu--slide-right>ul li.page_item_has_children:after {
-    display: inline-block;
-    /* font-family: "finance" !important; */
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 20px;
-    position: absolute;
-    content: "\67";
-    top: 0px;
-    right: 0;
-    width: 45px;
-    height: 46px;
-    text-align: center;
-    line-height: 46px;
-    border-left: 1px solid #e8e8e8;
-}
+
 
 .c-menu--slide-right>ul>li>ul.sub-menu,
 .c-menu--slide-right>ul>li>ul.children {

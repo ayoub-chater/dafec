@@ -6,6 +6,8 @@ import { useServices } from '../store/services';
 const store = useServices();
 const services = store.services;
 
+console.log(services) ;
+
 function viewServiceDetails(service) {
 	store.selectService(service.id);
 }
@@ -19,18 +21,18 @@ function viewServiceDetails(service) {
 		<div v-for="item in services" :key="item.id" class="service-item col-md-4" @click="viewServiceDetails(item)">
 			<div class="service-post-wrap">
 			<div class="post-thumb">
-				<router-link :to="`/services/${item.name}`">
+				<router-link :to="`/services/${item.slug}`">
 					<img width="360" height="180" :src="item.img" class="attachment-finance-service-loop size-finance-service-loop wp-post-image" alt="" decoding="async" />
 				</router-link>
 			</div><!-- thumbnail-->
 			<div class="loop-content">
-				<router-link :to="`/services/${item.name}`">
+				<router-link :to="`/services/${item.slug}`">
 					<h4 class="title">{{ item.name }}</h4>
 				</router-link>
-				<p class="excerpt">{{ item.description }}</p>
+				<p class="excerpt">{{ item.short }}</p>
 			</div>
 			<div class="view-more">
-				<i class="fa-solid fa-plus"></i><router-link :to="`/services/${item.name}`">Read More</router-link>
+				<i class="fa-solid fa-plus"></i><router-link :to="`/services/${item.name}`">Voir Plus</router-link>
 			</div>
 			</div>
 		</div>

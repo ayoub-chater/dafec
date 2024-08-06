@@ -1,0 +1,34 @@
+import axios from "axios";
+import { defineStore } from "pinia";
+
+
+  axios.withCredentials = true,
+  axios.withXSRFToken = true
+  
+
+export const useContact = defineStore('contact' ,{
+    state: () => ({
+        form: {
+            name: '',
+            phone:'',
+        },
+        message : ''
+    }),
+    actions: {
+      async getToken(){
+          axios.get('https://dafec.ma/dafecBackend/public/sanctum/csrf-cookie');
+      },
+      async sendMail(form){
+        const res = await axios.post('https://dafec.ma/dafecBackend/public/api/contact' ,form,{
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          })
+        this.message = res.data.message;
+      },
+      async connectToBackEnd(){
+        const res = await axios.get('https://dafec.ma/dafecBackend/public/api')
+        console.log(res.data);
+      }
+    }
+})

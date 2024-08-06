@@ -1184,7 +1184,8 @@ a.button-normal:hover,
 
 .section-title:after {
     content: "";
-    background-image: url(./img/section-title.png);
+    background-image: url("images/section-title.png");
+
     position: absolute;
     bottom: 0;
     height: 3px;
@@ -1298,7 +1299,7 @@ a.button-normal:hover,
     margin-top: 10px;
 }
 
-.c-menu--slide-right>ul li.menu-item-has-children:after,
+/* .c-menu--slide-right>ul li.menu-item-has-children:after,
 .c-menu--slide-right>ul li.page_item_has_children:after {
     display: inline-block;
     font-family: "finance" !important;
@@ -1315,7 +1316,7 @@ a.button-normal:hover,
     text-align: center;
     line-height: 46px;
     border-left: 1px solid #e8e8e8;
-}
+} */
 
 .c-menu--slide-right>ul>li>ul.sub-menu,
 .c-menu--slide-right>ul>li>ul.children {
@@ -1387,4 +1388,14 @@ a.button-normal:hover,
 
 .backGround {
     background-image: url("src/assets/images/background.jpg") ;
+}
+
+@media (max-width: 768px) {
+    .section-button {
+        top: 0px !important;
+        text-align: center !important;
+    }
+    .wpcf7 form {
+        margin-top: 120px !important;
+    }
 }

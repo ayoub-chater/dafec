@@ -1,70 +1,88 @@
 <script setup>
 import { useRoute } from 'vue-router';
-import { computed } from 'vue';
+import { computed, watch } from 'vue';
 import { useServices } from '../store/services';
 
 const store = useServices();
-const service = computed(() => store.selectedService);
+const route = useRoute();
 
-// console.log(service.value)
+const updateService = () => {
+    const serviceName = route.path.split('/').pop();
+    const service = store.services.find(s => s.name === serviceName);
+    if (service) {
+        store.selectService(service.id);
+    }
+};
+
+watch(() => route.path, updateService, { immediate: true });
+
+const service = computed(() => store.selectedService);
 
 </script>
 
-<template>
+
+    <template>
     <div id="content" class="clearfix">
         <div class="single-service wrapper clearfix">
-    		<div class="container">
-    			<div class="row">
-
-    				<div class="col-md-9 post-content single-content">
-					
-    											<div class="post-thumb">
-    							<!-- <img width="1920" height="1210" :src="service.img" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" >						thumbnail -->
-                                <img :src="service.img" :alt="service.name" >
-                            </div>
-
-    					<div class="post-content">
-    						<h2 class="post-title">
-    							{{ service.name }}						</h2>
-
-    						<div class="inner-content">
-    							<p>{{ service.description }}</p>
-    <blockquote><p>Because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself.</p></blockquote>
-    						</div>
-						
-    					</div> 
-
-    				</div>
-
-    				<!-- SIDEBAR START
-				============================================= -->
-    				<div class="blog-sidebar col-md-3">
-    					<div id="nav_menu-2" class="widget widget_nav_menu"><div class="heading-block"><h4>Our Services</h4></div><div class="menu-service-menu-container"><ul id="menu-service-menu" class="menu"><li id="menu-item-1879" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1879"><a href="https://financetheme.themesawesome.com/service/turnaround-consulting/">Turnaround Consulting</a></li>
-    <li id="menu-item-1880" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1880"><a href="https://financetheme.themesawesome.com/service/bonds-commodities/">Bonds &amp; Commodities</a></li>
-    <li id="menu-item-1881" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1881"><a href="https://financetheme.themesawesome.com/service/audit-assurance/">Audit &amp; Assurance</a></li>
-    <li id="menu-item-1882" class="menu-item menu-item-type-post_type menu-item-object-finance-service current-menu-item menu-item-1882"><a href="https://financetheme.themesawesome.com/service/trades-stocks/" aria-current="page">Trades &amp; Stocks</a></li>
-    <li id="menu-item-1883" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1883"><a href="https://financetheme.themesawesome.com/service/strategic-planning/">Strategic Planning</a></li>
-    <li id="menu-item-1884" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1884"><a href="https://financetheme.themesawesome.com/service/financial-projections/">Financial Projections</a></li>
-    </ul></div></div><div id="text-4" class="widget widget_text">			<div class="textwidget"><div class="sidebar-contact">
-    <h3>How we can help you?</h3>
-
-    <p>Contact us at the Finance WP office nearest to you or submit a business inquiry online.</p>
-
-    <router-link to="/contact" class="button button-white">Contact Us</router-link>
-    </div></div>
-    		</div>
-
-    				</div>
-    				<!-- SIDEBAR END -->
-
-    			</div>
-    		</div>
-    	</div>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-9 post-content single-content">
+                <div class="post-thumb">
+                <img :src="service.img" :alt="service.name" />
+                </div>
+                <div class="post-content">
+                <h2 class="post-title">{{ service.name }}</h2>
+                <div class="inner-content">
+                    <p>{{ service.description }}</p>
+                </div>
+                </div>
+            </div>
+            <div class="blog-sidebar col-md-3">
+                <div id="nav_menu-2" class="widget widget_nav_menu">
+                <div class="heading-block">
+                    <h4>Nos Services</h4>
+                </div>
+                <div class="menu-service-menu-container">
+                    <ul id="menu-service-menu" class="menu">
+                    <li class="menu-item">
+                        <router-link to="/services/Expertise comptable">Expertise comptable</router-link>
+                    </li>
+                    <li class="menu-item">
+                        <router-link to="/services/Commissariat aux compte">Commissariat aux compte</router-link>
+                    </li>
+                    <li class="menu-item">
+                        <router-link to="/services/Conseil">Conseil</router-link>
+                    </li>
+                    <li class="menu-item">
+                        <router-link to="/services/Fiscalité">Fiscalité</router-link>
+                    </li>
+                    <li class="menu-item">
+                        <router-link to="/services/Services juridiques">Services juridiques</router-link>
+                    </li>
+                    <li class="menu-item">
+                        <router-link to="/services/Formation">Formation</router-link>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+                <div id="text-4" class="widget widget_text">
+                <div class="textwidget">
+                    <div class="sidebar-contact">
+                    <h3>Comment est-ce que nous pouvons vous aider?</h3>
+                    <router-link to="/contact" class="button button-white">Contactez-nous</router-link>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
 </template>
 
-<style scoped>
 
+
+<style scoped>
 blockquote,
 q {
     quotes: none;
@@ -131,7 +149,8 @@ blockquote p {
 
 .single-content .post-title:after {
     content: "";
-    background-image: url(./img/section-title.png);
+    background-image: url("src/assets/images/section-title.png");
+
     position: absolute;
     bottom: 0;
     height: 3px;
@@ -477,7 +496,8 @@ p.post-nav-links {
 
 .blog-sidebar .widget .heading-block h4:after {
     content: "";
-    background-image: url(./img/section-title.png);
+    background-image: url("src/assets/images/section-title.png");
+
     position: absolute;
     bottom: 0;
     height: 3px;
@@ -529,6 +549,4 @@ p.post-nav-links {
 
 .collapse.show {
     visibility: visible;
-}
-
-</style>
+}</style>

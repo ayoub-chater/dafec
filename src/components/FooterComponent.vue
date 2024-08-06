@@ -11,9 +11,14 @@
 
                     <div class="footer-widget col-md-3">
                         <div id="text-2" class="widget-footer widget_text">
-                            <h2 class="title">Dafec</h2>
-                            <div class="textwidget">
-                                <p>Neque porro quisquam est, qui dolore ipsum quia dolor sit amet, consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt lores ta porro ame.</p>
+                            <h2 class="title">
+                                <div class="logo-image">
+                                    <router-link to="/"><img
+                                            src="../assets/images/logo_white.png"
+                                            class="image-logo" alt="logo" /></router-link>
+                                </div> 
+                            </h2>                            <div class="textwidget">
+                                <p>DAFEC est un cabinet d'expertise comptable basé à Casablanca et inscrit à l'ordre des experts comptables de Casablanca et spécialisé dans les domaines de l'expertise comptable.</p>
                                 <router-link to="/contact" class="button button-white">Obtenir un Devis</router-link>
                             </div>
                         </div>
@@ -24,18 +29,12 @@
                             <h2 class="title">Liens Utiles</h2>
                             <div class="menu-footer-menu-container">
                                 <ul id="menu-footer-menu" class="menu">
-                                    <li id="menu-item-1963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1592 current_page_item menu-item-1963"><a href="https://financetheme.themesawesome.com/" aria-current="page">Accueil</a></li>
-                                    <li id="menu-item-1962" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1962"><a href="https://financetheme.themesawesome.com/about-2/">À Propos</a></li>
-                                    <li id="menu-item-1960" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1960"><a href="https://financetheme.themesawesome.com/case-studies/">Études de Cas</a></li>
-                                    <li id="menu-item-1961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1961"><a href="https://financetheme.themesawesome.com/services/">Services</a></li>
-                                    <li id="menu-item-1964" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1964"><a href="https://financetheme.themesawesome.com/blog/">Blog</a></li>
-                                    <li id="menu-item-1959" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1959"><a href="https://financetheme.themesawesome.com/contact/">Contact</a></li>
-                                    <li id="menu-item-1965" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1965"><a href="https://financetheme.themesawesome.com/service/turnaround-consulting/">Consulting</a></li>
-                                    <li id="menu-item-1966" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1966"><a href="https://financetheme.themesawesome.com/service/bonds-commodities/">Produits de Base</a></li>
-                                    <li id="menu-item-1967" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1967"><a href="https://financetheme.themesawesome.com/service/audit-assurance/">Assurance</a></li>
-                                    <li id="menu-item-1968" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1968"><a href="https://financetheme.themesawesome.com/service/trades-stocks/">Transactions</a></li>
-                                    <li id="menu-item-1969" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1969"><a href="https://financetheme.themesawesome.com/service/strategic-planning/">Planification</a></li>
-                                    <li id="menu-item-1970" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1970"><a href="https://financetheme.themesawesome.com/service/financial-projections/">Projections Financières</a></li>
+                                    <li id="menu-item-1963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1592 current_page_item menu-item-1963"><router-link to="/">Accueil</router-link></li>
+                                    <li id="menu-item-1960" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1960"><router-link to="/à-propos">À propos</router-link></li>
+                                    <li id="menu-item-1964" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1964"><router-link to="/nos-services">Nos services</router-link></li>
+                                    <li id="menu-item-1965" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1965"><router-link to="/nos-solutions">Solutions DAF</router-link></li>
+                                    <li id="menu-item-1966" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1966"><router-link to="/outils-pratiques">Outils pratiques</router-link></li>
+                                    <li id="menu-item-1969" class="menu-item menu-item-type-post_type menu-item-object-finance-service menu-item-1969"><router-link to="/contact">Contact</router-link></li>
                                 </ul>
                             </div>
                         </div>
@@ -45,9 +44,9 @@
                         <div id="social_box-widget-3" class="widget-footer socialbox-widget">
                             <h2 class="title">Suivez-nous!</h2>
                             <ul class="clearfix">
-                                <li><a target="_blank" data-title="Facebook" class="socialbox-item facebook" href="https://financetheme.themesawesome.com/"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li><a target="_blank" data-title="Twitter" class="socialbox-item twitter" href="https://financetheme.themesawesome.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a target="_blank" data-title="Pinterest" class="socialbox-item pinterest" href="https://financetheme.themesawesome.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a target="_blank" data-title="Facebook" class="socialbox-item facebook" href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a target="_blank" data-title="Twitter" class="socialbox-item twitter" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a target="_blank" data-title="Pinterest" class="socialbox-item pinterest" href=""><i class="fa-brands fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -60,7 +59,7 @@
                                     <i class="icon-finance-map-marker"></i>
                                     <div class="text-section">
                                         <h4>Adresse de notre Bureau</h4>
-                                        <p>Boulevard des Capucines</p>
+                                        <p>Résidence EDEN CALIFORNIE 3 Etg n° 9, Bd HAIFA. Casablanca</p>
                                     </div>
                                 </div>
 
@@ -68,7 +67,7 @@
                                     <i class="fa-solid fa-location-dot"></i>
                                     <div class="text-section">
                                         <h4>Téléphone</h4>
-                                        <p>+84 345 876 123</p>
+                                        <p>+212 662 34 53 30</p>
                                     </div>
                                 </div>
 
@@ -76,7 +75,7 @@
                                     <i class="fa-solid fa-envelope-open-text"></i>
                                     <div class="text-section">
                                         <h4>Email</h4>
-                                        <p>finance@themes.com</p>
+                                        <p>contact@dafec.ma</p>
                                     </div>
                                 </div>
 
@@ -100,7 +99,7 @@
         <div id="copyright" class="foot-copyright clearfix">
             <div class="container">
                 <div class="copyright-text">
-                    Propulsé par Vue.JS - Créé par <a href="https://mzlouafi.com/">Mzlouafi</a>
+                    Créé par <a href="https://mzlouafi.com/">Mzlouafi</a>
                 </div>
             </div>
         </div>
@@ -112,6 +111,19 @@
 /*-----------------------------------------------------------------------------------*/
 /*  12. FOOTER
 /*-----------------------------------------------------------------------------------*/
+
+ul.clearfix {
+    display: flex;
+    list-style-type: none;
+    width: fit-content;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-widget .logo-image {
+    width: 100px;
+}
 
 .site-footer {
     background-color: #0f2c6b;
@@ -173,9 +185,7 @@
 }
 
 .widget-footer.widget_nav_menu ul li {
-    width: 50%;
-    display: inline-block;
-    /* float: left; */
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -258,7 +268,7 @@ ul.clearfix {
     width: fit-content;
     gap: 10px;
     margin: 0;
-    padding: 0;
+    padding: 0;
 }
 
 </style>

@@ -25,7 +25,7 @@ function viewServiceDetails(service) {
 						</div>
 					</div>
 					<div class="section-button col-md-4 text-right vertical-center" style="top: 41px;">
-						<a href="https://financetheme.themesawesome.com/services/" class="button button-normal">Voir Tous les Services</a>
+						<router-link to="/nos-services" class="button button-normal">Voir Tous les Services</router-link>
 					</div>
 				</div>
 
@@ -74,6 +74,12 @@ function viewServiceDetails(service) {
 
 .service-item {
     margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .service-item {
+    margin-bottom: 75px;
+}
 }
 
 .service-item .view-more {
