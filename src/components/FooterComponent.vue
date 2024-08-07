@@ -44,9 +44,9 @@
                         <div id="social_box-widget-3" class="widget-footer socialbox-widget">
                             <h2 class="title">Suivez-nous!</h2>
                             <ul class="clearfix">
-                                <li><a target="_blank" data-title="Facebook" class="socialbox-item facebook" href=""><i class="fa-brands fa-facebook"></i></a></li>
-                                <li><a target="_blank" data-title="Twitter" class="socialbox-item twitter" href=""><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a target="_blank" data-title="Pinterest" class="socialbox-item pinterest" href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a target="_blank" data-title="Facebook" class="socialbox-item facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a target="_blank" data-title="Twitter" class="socialbox-item twitter" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a target="_blank" data-title="Pinterest" class="socialbox-item pinterest" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                                     <i class="icon-finance-map-marker"></i>
                                     <div class="text-section">
                                         <h4>Adresse de notre Bureau</h4>
-                                        <p>Résidence EDEN CALIFORNIE 3 Etg n° 9, Bd HAIFA. Casablanca</p>
+                                        <a href="https://www.google.com/maps/place/R%C3%A9sidence+Eden+Californie/@33.5279434,-7.6076729,17z/data=!3m1!4b1!4m6!3m5!1s0xda63339f3bb51cd:0x6b3291c846302390!8m2!3d33.5279434!4d-7.605098!16s%2Fg%2F11jzn8jt61?entry=ttu" target="_blank"><span>Résidence EDEN CALIFORNIE 3 Etg n° 9, Bd HAIFA. Casablanca</span></a>
                                     </div>
                                 </div>
 
@@ -67,7 +67,7 @@
                                     <i class="fa-solid fa-location-dot"></i>
                                     <div class="text-section">
                                         <h4>Téléphone</h4>
-                                        <p>+212 662 34 53 30</p>
+                                        <a href="tel:+212662345330"><span>(+212) 662 34 53 30</span></a>
                                     </div>
                                 </div>
 
@@ -75,7 +75,7 @@
                                     <i class="fa-solid fa-envelope-open-text"></i>
                                     <div class="text-section">
                                         <h4>Email</h4>
-                                        <p>contact@dafec.ma</p>
+                                        <a href="mailto:contact@dafec.ma"><span>contact@dafec.ma</span></a>
                                     </div>
                                 </div>
 
@@ -83,7 +83,7 @@
                                     <i class="fa-regular fa-clock"></i>
                                     <div class="text-section">
                                         <h4>Lundi - Vendredi</h4>
-                                        <p>10h00 à 18h00</p>
+                                        <p>9h00 à 18h00</p>
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@
         <div id="copyright" class="foot-copyright clearfix">
             <div class="container">
                 <div class="copyright-text">
-                    Créé par <a href="https://mzlouafi.com/">Mzlouafi</a>
+                    © 2024 Tous droits réservés | Conçu et développé par <a target="_blank" href="https://mzlouafi.com"><b>MZ LOUAFI SARL</b> </a>
                 </div>
             </div>
         </div>
@@ -107,10 +107,12 @@
 </template>
 
 
-<style>
+<style scoped>
 /*-----------------------------------------------------------------------------------*/
 /*  12. FOOTER
 /*-----------------------------------------------------------------------------------*/
+
+span { color: #fff ; }
 
 ul.clearfix {
     display: flex;

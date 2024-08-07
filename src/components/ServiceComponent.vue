@@ -41,7 +41,7 @@ function viewServiceDetails(service) {
 								<router-link :to="`/services/${item.name}`">
 									<h4 class="title">{{ item.name }}</h4>
 								</router-link>
-								<p class="excerpt">{{ item.description }}</p>
+								<p class="excerpt">{{ item.short }}</p>
 							</div>
 							<div class="view-more">
 								<i class="fa-solid fa-plus"></i><router-link :to="`/services/${item.name}`">Lire Plus</router-link>

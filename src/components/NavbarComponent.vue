@@ -28,7 +28,7 @@ function showCaseStudies(){
                             <div class="col-md-8">
                                 <div class="address-bar">
                                     <i class="fa-solid fa-location-dot"></i>
-                                    <p>Résidence EDEN CALIFORNIE 3 Etg n° 9, Bd HAIFA. Casablanca</p>
+                                    <a href="https://www.google.com/maps/place/R%C3%A9sidence+Eden+Californie/@33.5279434,-7.6076729,17z/data=!3m1!4b1!4m6!3m5!1s0xda63339f3bb51cd:0x6b3291c846302390!8m2!3d33.5279434!4d-7.605098!16s%2Fg%2F11jzn8jt61?entry=ttu" target="_blank"><ayoub>Résidence EDEN CALIFORNIE 3 Etg n° 9, Bd HAIFA. Casablanca</ayoub></a>
                                 </div>
                             </div>
                         </div>
@@ -70,14 +70,14 @@ function showCaseStudies(){
                                     <i class="fa-solid fa-phone"></i>
                                     <p>
                                         <span class="heading">Numéro de Téléphone</span>
-                                        <span>(+212) 662 34 53 30</span>
+                                        <a href="tel:+212662345330"><span>(+212) 662 34 53 30</span></a>
                                     </p>
                                 </li>
                                 <li class="last">
                                     <i class="fa-solid fa-envelope-open-text"></i>
                                     <p>
                                         <span class="heading">Email de Contact</span>
-                                        <span>contact@dafec.ma</span>
+                                        <a href="mailto:contact@dafec.ma"><span>contact@dafec.ma</span></a>
                                     </p>
                                 </li>
                             </ul>
@@ -199,10 +199,12 @@ function showCaseStudies(){
 </template>
 
 
-<style>
+<style scoped>
 
 /*  2. Header
 /-----------------------------------------------------------------------------------*/
+
+ayoub { color: #fff ; }
 
 .address-bar {
     align-items: center;

@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="section-button col-md-4 text-right vertical-center" style="top: 41px;">
-			<a href="https://www.portail.tax.gov.ma/wps/portal/DGI/Vos-impots-procedures/Vos-echeances-fiscales" class="button button-normal">Visiter</a>
+			<a href="https://www.portail.tax.gov.ma/wps/portal/DGI/Vos-impots-procedures/Vos-echeances-fiscales" target="_blank" class="button button-normal">Visiter</a>
 		</div>
       </div>
       <div class="section-header clearfix" style="margin-top: 50px">

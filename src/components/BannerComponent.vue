@@ -28,7 +28,7 @@
             </p>
           </div>
           <div class="button-container">
-            <router-link to="/à-propos"><button class="btn btn-primary">En savoir plus</button></router-link>
+            <router-link to="/a-propos"><button class="btn btn-primary">En savoir plus</button></router-link>
             <router-link to="/contact"><button class="btn btn-secondary">Nous contacter</button></router-link>
           </div>
         </div>
@@ -39,6 +39,7 @@
 
 
 <style >
+
 :root {
   --primary-color: #ffcf06;
   --secondary-color: #375084;

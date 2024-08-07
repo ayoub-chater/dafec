@@ -4,77 +4,53 @@
 <template>
     <div class="feature-section clearfix" style="padding:100px 0;">
         <div class="container">
-            <h2 class="section-title">Caractéristiques</h2>
+            <h2 class="section-title">Nos Valeurs</h2>
             
             <div class="features row clearfix">
-                <div class="feature col-md-4">
+                <div class="feature col-md-6">
                     <div class="feature-content">
                         <div class="feature-pic">
-                            <i class="fa-solid fa-paper-plane"></i>
+                            <i class="fa-solid fa-circle-check"></i>
                         </div>
                         <div class="feature-desc">
-                            <h5 class="title">Consulting en Transport & Logistique</h5>
-                            <p>Maintenant résidence Dashwoods, elle vous est excellente. Ombre étant sous son lit. Beaucoup lire sur comme dessiner.</p>
+                            <h4 class="title">Excellency</h4>
+                            <p>Excellency est la marque de fabrique de notre société, représentant notre engagement inébranlable envers une qualité supérieure et un service exceptionnel.</p>
                         </div>
                     </div>
                 </div>
             
-                <div class="feature col-md-4">
+                <div class="feature col-md-6">
                     <div class="feature-content">
                         <div class="feature-pic">
-                            <i class="fa-solid fa-plane-departure"></i>
+                            <i class="fa-solid fa-shield"></i>
                         </div>
                         <div class="feature-desc">
-                            <h5 class="title">Consulting en Voyage et Aviation</h5>
-                            <p>Maintenant résidence Dashwoods, elle vous est excellente. Ombre étant sous son lit. Beaucoup lire sur comme dessiner.</p>
+                            <h4 class="title">Security</h4>
+                            <p>La sécurité est au cœur des valeurs de notre société, garantissant la protection la plus totale et la confiance de nos clients.</p>
                         </div>
                     </div>
                 </div>
             
-                <div class="feature col-md-4">
+                <div class="feature col-md-6">
                     <div class="feature-content">
                         <div class="feature-pic">
-                            <i class="fa-solid fa-briefcase"></i>
+                            <i class="fa-solid fa-face-smile"></i>
                         </div>
                         <div class="feature-desc">
-                            <h5 class="title">Consulting en Services Financiers</h5>
-                            <p>Maintenant résidence Dashwoods, elle vous est excellente. Ombre étant sous son lit. Beaucoup lire sur comme dessiner.</p>
+                            <h5 class="title">Integrity</h5>
+                            <p>L'intégrité définit l'éthique de notre société, guidant nos actions avec honnêteté, transparence et normes éthiques.</p>
                         </div>
                     </div>
                 </div>
             
-                <div class="feature col-md-4">
+                <div class="feature col-md-6">
                     <div class="feature-content">
                         <div class="feature-pic">
-                            <i class="fa-solid fa-chart-simple"></i>
+                            <i class="fa-solid fa-handshake"></i>
                         </div>
                         <div class="feature-desc">
-                            <h5 class="title">Consulting en Services aux Entreprises</h5>
-                            <p>Maintenant résidence Dashwoods, elle vous est excellente. Ombre étant sous son lit. Beaucoup lire sur comme dessiner.</p>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="feature col-md-4">
-                    <div class="feature-content">
-                        <div class="feature-pic">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                        <div class="feature-desc">
-                            <h5 class="title">Consulting en Produits de Consommation</h5>
-                            <p>Maintenant résidence Dashwoods, elle vous est excellente. Ombre étant sous son lit. Beaucoup lire sur comme dessiner.</p>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="feature col-md-4">
-                    <div class="feature-content">
-                        <div class="feature-pic">
-                            <i class="fa-solid fa-bolt"></i>
-                        </div>
-                        <div class="feature-desc">
-                            <h5 class="title">Consulting en Énergie et Environnement</h5>
-                            <p>Maintenant résidence Dashwoods, elle vous est excellente. Ombre étant sous son lit. Beaucoup lire sur comme dessiner.</p>
+                            <h5 class="title">Ethics</h5>
+                            <p>L'éthique est la fondation de notre société, assurant que chaque décision et action reflète notre engagement envers les principes moraux et la responsabilité sociale.</p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +82,7 @@
     height: 80px;
     border-radius: 50%;
     text-align: center;
-    line-height: 85px;
+    line-height: 89px;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;

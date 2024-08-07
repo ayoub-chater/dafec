@@ -29,9 +29,9 @@ const hideModal = () => {
 </script>
 
 <template>
-    <div class="form-section clearfix" style="padding:80px 0; background-color:#0f2c6b;">
+    <div class="form-section clearfix" style="padding:80px 0; background-color:#0f2c6b">
         <div class="container">
-            <div class="row">
+            <div class="row row-flex">
                 <div class="form-html vertical-center col-md-6" >
                     <img src="../assets/images/logo_white.png" alt="logo-white">
                     <h2>Demandez une consultation gratuite</h2>
@@ -79,6 +79,11 @@ const hideModal = () => {
 
 
 <style>
+
+.row-flex {
+    display: flex ;
+    align-items: center ;
+}
 
 .form-alert {
     background-color: #ffcf06;

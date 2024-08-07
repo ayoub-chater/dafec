@@ -37,9 +37,9 @@
                         </ul>    
                     </div>
                     <div class="about-button">
-                        <a href="https://financetheme.themesawesome.com/contact/" class="button button-normal">
+                        <router-link to="/contact" class="button button-normal">
                             Contactez-nous
-                        </a>
+                        </router-link>
                     </div>
                 </div>
 

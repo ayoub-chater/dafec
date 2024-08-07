@@ -9,35 +9,12 @@ function clickSlider() {
   console.log(sliderClicked.value);
 }
 
-// onMounted(() => {
-//   const counterValues = ref(document.querySelectorAll('.counter-value'));
-//   const interval = .1;
-//   console.log(counterValues.value);
-//   // totalDuration = 2000;
-//   counterValues.value.forEach(value => {
-//     let startVal = 0;
-//     let endVal = parseInt(value.getAttribute('data-val'));
-//     let duration = interval / endVal;
-//     let counter = setInterval(() => {
-//       startVal +=1;
-//       value.textContent = startVal;
-//       if(startVal === endVal){
-//         clearInterval(counter);
-//       }
-//     } , duration)
-//   })
-  
-// })
-
-
-
 
 onMounted(() => {
 
   const counterValues = ref(document.querySelectorAll('.counter-value'));
   const totalDuration = 2000;
 
-  console.log(counterValues.value);
   counterValues.value.forEach(value => {
     let startVal = 0;
     let endVal = parseInt(value.getAttribute('data-val'));
@@ -80,13 +57,11 @@ onMounted(() => {
     <div class="container">
       <div class="row">
         <div class="counter-review col-md-6">
-          <h2 class="section-title white">Nos Valeurs</h2>
+          <h2 class="section-title white">Avis clients</h2>
 
           <div class="review-text">
             <p>
-              DAFEC s'engage envers l'excellence et la satisfaction de ses clients.
-              Nous proposons des solutions comptables sur mesure et proposons à nos clients une approche professionnelle et rigoureuse.
-              Faites confiance à dafec pour construire un partenariat durable.
+
             </p>
           </div>
 
@@ -98,8 +73,8 @@ onMounted(() => {
               </div>
 
               <div class="counter-text">
-                <p class="counter-title" data-val="41265">Excellency</p>
-                <!-- <p class="counter-title">Hours in work</p> -->
+                <p class="counter-value" data-val="41265">0000</p>
+                <p class="counter-title">Heures de travail</p>
               </div>
             </div>
             <div class="counter-item col-md-6">
@@ -108,8 +83,8 @@ onMounted(() => {
               </div>
 
               <div class="counter-text">
-                <p class="counter-title" data-val="1565">Security</p>
-                <!-- <p class="counter-title">Cups of coffee</p> -->
+                <p class="counter-value" data-val="1565">0000</p>
+                <p class="counter-title">Tasses de café</p>
               </div>
             </div>
             <div class="counter-item col-md-6">
@@ -118,8 +93,8 @@ onMounted(() => {
               </div>
 
               <div class="counter-text">
-                <p class="counter-title" data-val="675">Integrity</p>
-                <!-- <p class="counter-title">Happy clients</p> -->
+                <p class="counter-value" data-val="675">0000</p>
+                <p class="counter-title">Des clients satisfaits</p>
               </div>
             </div>
             <div class="counter-item col-md-6">
@@ -128,8 +103,8 @@ onMounted(() => {
               </div>
 
               <div class="counter-text">
-                <p class="counter-title" data-val='834'>Ethics</p>
-                <!-- <p class="counter-title">Total projects</p> -->
+                <p class="counter-value" data-val='834'>0000</p>
+                <p class="counter-title">Projets totaux</p>
               </div>
             </div>
           </div>
@@ -188,15 +163,11 @@ onMounted(() => {
                       <div class="testimonial-text">
                         <i class="icon-finance-quote"></i>
                         <p>
-                          Image. And lesser. Won’t divided. His won’t lesser us
-                          their likeness without sixth is light own. Divided
-                          Gathered created third tree after grass. Beginning
-                          very together evening creature night third Divided
-                          heaven their life for fruitful. First our.
+                          L'agence Dafec est très professionnelle. Ils ont été très disponibles, à l'écoute et réactifs. Je les recommande vivement.
                         </p>
 
-                        <h4>Mohamed Habaza</h4>
-                        <span class="testi-job">CO Founder</span>
+                        <h4>Khaled ch</h4>
+                        <span class="testi-job">Client</span>
                       </div>
                     </div>
                   </li>
@@ -210,7 +181,7 @@ onMounted(() => {
                       opacity: 1;
                       display: block;
                       z-index: 1;
-                      animation: fadeIn 2.5s ease;
+                      animation: fadeIn 1.5s ease;
                     "
                     class="flex-active-slide"
                     v-show="sliderClicked"
@@ -239,14 +210,11 @@ onMounted(() => {
                       <div class="testimonial-text">
                         <i class="icon-finance-quote"></i>
                         <p>
-                          Gregg is an outstanding Washington tax attorney. He is
-                          responsive, thorough, and creative in his advice, and
-                          he is also genuinely collegial with others. He is a
-                          valued advisor to AOL and other Time Warner divisions.
+                          Si vous voulez un service professionnel et rapide à un prix très raisonnable, ne regardez pas plus loin. Dafec vont dépasser vos attentes.👍
                         </p>
 
-                        <h4>Rian Adam</h4>
-                        <span class="testi-job">Managing Director</span>
+                        <h4>Said Saili</h4>
+                        <span class="testi-job">Client</span>
                       </div>
                     </div>
                   </li>
@@ -269,11 +237,8 @@ onMounted(() => {
 </template>
 
 <style>
-
 .counter-item {
     margin-top: 20px;
-    display: flex;
-    align-items: center;
 }
 
 .counter-text {
@@ -294,7 +259,6 @@ onMounted(() => {
 .counter-text .counter-title {
     font-family: 'open_sansbold';
     color: #ffffff;
-    font-size: 20px;
 }
 
 
@@ -311,7 +275,6 @@ onMounted(() => {
     -ms-transition: all .35s ease;
     -o-transition: all .35s ease;
     transition: all .35s ease;
-    margin-right: 30px;
 }
 
 .counter-item:hover .counter-pic {
