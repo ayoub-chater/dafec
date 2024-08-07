@@ -132,9 +132,12 @@
     font-size: 1.8rem;
     line-height: 24px;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .feature .feature-desc p {
     margin-bottom: 0;
+    font-size: 1.5rem;
+    
 }
 </style>

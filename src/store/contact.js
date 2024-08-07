@@ -16,10 +16,10 @@ export const useContact = defineStore('contact' ,{
     }),
     actions: {
       async getToken(){
-          axios.get('https://dafec.ma/dafecBackend/public/sanctum/csrf-cookie');
+          axios.get('https://localhost:8000/sanctum/csrf-cookie');
       },
       async sendMail(form){
-        const res = await axios.post('https://dafec.ma/dafecBackend/public/api/contact' ,form,{
+        const res = await axios.post('http://localhost:8000/api/contact' ,form,{
             headers: {
               'Content-Type': 'application/json',
             },
@@ -27,7 +27,7 @@ export const useContact = defineStore('contact' ,{
         this.message = res.data.message;
       },
       async connectToBackEnd(){
-        const res = await axios.get('https://dafec.ma/dafecBackend/public/api')
+        const res = await axios.get('http://localhost:8000/api')
         console.log(res.data);
       }
     }

@@ -709,11 +709,13 @@ a.button-normal:hover {
 }
 
 h2.section-title {
-    color: #333333
+    color: #333333;
+    font-family: system-ui;
 }
 
 h2.section-title.white {
-    color: #ffffff
+    color: #ffffff;
+    font-family: system-ui;
 }
 
 .about-text strong,
@@ -724,7 +726,9 @@ h2.section-title.white {
 .contact-details,
 .contact-details p,
 .contact-text p {
-    color: #333333
+    color: #333333;
+    font-size: 2rem;
+    font-family: system-ui;
 }
 
 .about-text ul li i {
@@ -819,7 +823,8 @@ h2.section-title.white {
 }
 
 .service-post-wrap p {
-    color: #333333
+    color: #333333;
+    font-size: 1.5rem;
 }
 
 .service-post-wrap {

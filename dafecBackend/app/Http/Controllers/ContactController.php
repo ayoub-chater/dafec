@@ -12,10 +12,7 @@ class ContactController extends Controller
 
         $data = $request->validate([
             'name' => 'required',
-            'email' => 'required|email',
             'phone' => 'required',
-            'subject' => 'required',
-            'message' => 'required',
         ]);
 
         $mail = new PHPMailer(true);
@@ -33,13 +30,11 @@ class ContactController extends Controller
    
             
             $mail->addAddress('anassbarik03@gmail.com', 'Anass Barik');
-            $mail->addReplyTo($data['email'],$data['name']);
-   
-            $mail->isHTML(false);
-            $mail->Subject = $data['subject'];
-            $message = $data['message'];
+               $mail->isHTML(false);
+            $mail->Subject = "Demande d'information";
             $phone = $data['phone'];
-            $body = "Message :  $message et telephone : $phone";
+            $name = $data['name'];
+            $body = "Message de $name numero de telephone : $phone";
             $mail->Body = $body;
 
         

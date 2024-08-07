@@ -14,7 +14,7 @@
               style="text-align: justify"
               href="https://www.portail.tax.gov.ma/wps/portal/DGI/Vos-impots-procedures/Vos-echeances-fiscales"
             >
-              <span style="color: #023669; font-weight: 700"
+              <span style="color: #023669; font-weight: 700;font-size: 1.6rem;"
                 >portail.tax.gov.ma/wps/portal/DGI/Vos-impots-procedures/Vos-echeances-fiscales</span
               >
             </a>

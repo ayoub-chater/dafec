@@ -13,13 +13,13 @@
             font-weight: 800;
             width: 70%;
             color: #0f2c6b;
-            font-family: 'fira sans'
+            font-family: system-ui;
             ">Commençons le Plan Financier du Futur</h1>
             <p class="banner-sub" style="    
             font-size: 20px;
             color: #333333;
             width: 55%;
-            font-family: 'open sans';
+            font-family: sans-serif;
             font-weight: bold;
             margin-top: 40px;
             ">

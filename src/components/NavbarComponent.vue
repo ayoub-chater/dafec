@@ -111,11 +111,11 @@ function showCaseStudies(){
                                     <li id="menu-item-1934"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934">
                                         <router-link to="/outils-pratiques">Outils pratiques</router-link>
-                                        <ul class="sub-menu">
+                                        <!-- <ul class="sub-menu">
                                             <li id="menu-item-2010" class="menu-item menu-item-type-post_type menu-item-object-finance-project current-menu-item menu-item-2010"><a href="#" aria-current="page">Agenda Fiscal</a></li>
                                             <li id="menu-item-2008" class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2008"><a href="#">Liens utiles</a></li>
                                             <li id="menu-item-2009" class="menu-item menu-item-type-post_type menu-item-object-finance-project menu-item-2009"><a href="#">Bases légales et règlementaires</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <li id="menu-item-1934"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934">
@@ -161,7 +161,7 @@ function showCaseStudies(){
                                         <li :class="['menu-item', 'menu-item-type-post_type','menu-item-object-page' ,'menu-item-has-children','menu-item-1935' , {'menu-selected': caseStudies}]">
                                             <div style="align-items: center;display: flex;justify-content: space-between;">
                                                 <router-link to="/nos-solutions">Outils pratiques</router-link>
-                                                <i class="fa-solid fa-chevron-down" style="margin-right:10px;" @click="showCaseStudies"></i>
+                                                <!-- <i class="fa-solid fa-chevron-down" style="margin-right:10px;" @click="showCaseStudies"></i> -->
 
                                             </div>
 

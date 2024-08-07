@@ -26,7 +26,7 @@
 
                     <div class="footer-widget col-md-3">
                         <div id="nav_menu-3" class="widget-footer widget_nav_menu">
-                            <h2 class="title">Liens Utiles</h2>
+                            <h2 class="title">Liens utiles</h2>
                             <div class="menu-footer-menu-container">
                                 <ul id="menu-footer-menu" class="menu">
                                     <li id="menu-item-1963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1592 current_page_item menu-item-1963"><router-link to="/">Accueil</router-link></li>
@@ -150,8 +150,9 @@ ul.clearfix {
 /* widget footer */
 
 .footer-widget h2 {
-    color: #ffffff;
+    color: var(--primary-color);
     margin: 0;
+    font-family: system-ui;
 }
 
 .footer-widget h2 {
@@ -175,6 +176,8 @@ ul.clearfix {
 .footer-widget .textwidget p {
     color: #ffffff;
     margin-bottom: 0;
+    font-size: 1.7rem;
+    font-family: system-ui;
 }
 
 /* widget menu */

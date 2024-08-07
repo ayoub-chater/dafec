@@ -7,7 +7,7 @@
         <div class="section-detail col-md-12">
           <h2 class="section-title">Nos Solutions DAF</h2>
           <div class="section-text">
-            <p style="text-align: justify">
+            <p style="text-align: justify;font-size: 2rem;">
               <span style="color: #023669; font-weight: 700"
                 >Le DAF (Directeur Administratif et Financier)</span
               >
@@ -15,7 +15,7 @@
               privilégié de l'ensemble des directions. Il veille à l’équilibre
               financier de l’entreprise et à l’optimisation de ses performances.
             </p>
-            <p style="text-align: justify">
+            <p style="text-align: justify;font-size: 2rem;">
               Cependant, les entreprises, n'ont pas toutes les moyens pour
               bénéficier d'un DAF à temps plein. D'autres, peuvent traverser une
               <span style="font-weight: 700">
@@ -67,7 +67,7 @@
               <div class="post-meta clearfix"></div>
 
               <div class="post-text excerpt">
-                <p style="text-align: justify">
+                <p style="text-align: justify;">
                   La solution DAF externalisé offre une plus grande flexibilité.
                   La durée aisi que la fréquence d'intervention du DAF peut
                   varier selon vos besoins, allant d'un jour par semaine à une
@@ -268,7 +268,8 @@
   margin: 0;
   color: #333333;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 24px;
+  font-family: system-ui;
 }
 </style>

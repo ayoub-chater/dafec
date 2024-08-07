@@ -32,7 +32,7 @@ const hideModal = () => {
     <div class="form-section clearfix" style="padding:80px 0; background-color:#0f2c6b;">
         <div class="container">
             <div class="row">
-                <div class="form-html vertical-center col-md-6" style="top: 94px;">
+                <div class="form-html vertical-center col-md-6" >
                     <img src="../assets/images/logo_white.png" alt="logo-white">
                     <h2>Demandez une consultation gratuite</h2>
                     <p>Souhaitez-vous parler à l'un de nos conseillers financiers par téléphone ? Soumettez simplement vos
@@ -47,18 +47,11 @@ const hideModal = () => {
                             <ul></ul>
                         </div>
                         <form @submit.prevent="sendMail" method="post" class="form init">
-                            <p class="name">
-                                <span class="-form-control-wrap">
+                            <p class="">
+                                <span class="form-control-wrap">
                                     <input v-model="form.name" size="40" maxlength="400"
                                         class="-form-control text validates-as-required" placeholder="Votre Nom" type="text"
                                         name="name" />
-                                </span>
-                            </p>
-                            <p class="email">
-                                <span class="form-control-wrap">
-                                    <input v-model="form.email" size="40" maxlength="400"
-                                        class="-form-control email text validates-as-email" placeholder="Votre Email"
-                                        type="email" name="email" />
                                 </span>
                             </p>
                             <p class="telephone">
@@ -67,19 +60,7 @@ const hideModal = () => {
                                         aria-invalid="false" placeholder="Votre telephone" type="text" name="phone" />
                                 </span>
                             </p>
-                            <p class="subject">
-                                <span class="form-control-wrap">
-                                    <input v-model="form.subject" size="40" maxlength="400" class="-form-control -text"
-                                        aria-invalid="false" placeholder="Sujet" type="text" name="subject" />
-                                </span>
-                            </p>
-                            <p>
-                                <span class="form-control-wrap">
-                                    <textarea v-model="form.message" cols="40" rows="10" maxlength="2000"
-                                        class="-form-control textarea" placeholder="Votre Message"
-                                        name="message"></textarea>
-                                </span>
-                            </p>
+
 
                             <input class="-form-control submit" type="submit" value="Envoyer" />
                         </form>

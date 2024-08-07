@@ -21,7 +21,7 @@ function viewServiceDetails(service) {
 					<div class="section-detail col-md-8">
 						<h2 class="section-title">Nos Meilleurs Services</h2>
 						<div class="section-text">
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+							<p>Nos experts se tiennent à vos côtés pour vous conseiller, vous guider tout au long de vos démarches et vous accompagner dans votre évolution. </p>
 						</div>
 					</div>
 					<div class="section-button col-md-4 text-right vertical-center" style="top: 41px;">

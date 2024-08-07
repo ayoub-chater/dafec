@@ -67,16 +67,16 @@ const hideModal = () => {
                         <div class="contact-text clearfix">
                             <div class="contact-author-details">
                                 <div class="telephone">
-                                    <h4 class="title HA">Telephone : </h4> <span>+212 662 34 53 30</span>
+                                    <h4 class="title HA">Telephone : </h4> <a href="tel:+212662345330">+212 662 34 53 30</a>
                                 </div>
                                 <div class="email-contact">
-                                    <h4 class="title HA">Email : </h4> <span>contact@dafec.ma</span>
+                                    <h4 class="title HA">Email : </h4> <a href="mailto:contact@dafec.ma">contact@dafec.ma</a>
                                 </div>
                                 <div class="location">
-                                    <h4 class="title HA">Adresse : </h4> <span>Résidence EDEN CALIFORNIE 3 Etg n° 9, Bd HAIFA. Casablanca</span>
+                                    <h4 class="title HA">Adresse : </h4> <a href="https://www.google.com/maps/place/R%C3%A9sidence+Eden+Californie/@33.5279434,-7.6076729,17z/data=!3m1!4b1!4m6!3m5!1s0xda63339f3bb51cd:0x6b3291c846302390!8m2!3d33.5279434!4d-7.605098!16s%2Fg%2F11jzn8jt61?entry=ttu" target="_blank">Résidence EDEN CALIFORNIE 3 Etg n° 9, Bd HAIFA. Casablanca</a>
                                 </div>
                                 <div class="text-section">
-                                    <h4 class="title HA">Heures : </h4> <span>Lundi - Vendredi   ( 9h00 à 18h00 ) </span>
+                                    <h4 class="title HA">Horaire : </h4> <span>Lundi - Vendredi   ( 9h00 à 18h00 ) </span>
                                     </div>
                             </div>
                         </div>
