@@ -102,7 +102,7 @@
 			</div>
 
 			<div class="the-blog row clearfix margin-top-40">
-				<h3 class="section-title">Faire appel à un DAF externalisé permet au chef d'entreprise d'avoir : </h3>
+				<h3 class="section-title" style="text-align: justify;margin: 0 29px;">Faire appel à un DAF externalisé permet au chef d'entreprise d'avoir : </h3>
 				<article id="post-1767"
 					class="blog-item col-md-6 post-1767 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-insurance">
 					<div class="post-content-wrap">

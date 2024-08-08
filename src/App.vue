@@ -5,8 +5,9 @@ import { useContact } from "./store/contact";
 
 const contactStore = useContact();
 
-onMounted(async () => {
-  await contactStore.connectToBackEnd();
+onMounted(() => {
+  contactStore.getToken();
+  contactStore.connectToBackEnd();
 })
 </script>
 

@@ -30,7 +30,7 @@ const hideModal = () => {
                 <div class="row">
                     <!-- CONTACT FORM START
             ============================================= -->
-                    <div class="contact-form col-md-6">
+                    <div class="contact-form col-md-6" style="margin-bottom: 20px;">
                         <div class="form wow fadeIn animated" style="visibility: visible">
                             <div>
                                 <form @submit.prevent="sendMail" method="post" class="form init">

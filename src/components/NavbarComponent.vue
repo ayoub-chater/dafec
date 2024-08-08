@@ -160,7 +160,7 @@ function showCaseStudies(){
                                         </li>
                                         <li :class="['menu-item', 'menu-item-type-post_type','menu-item-object-page' ,'menu-item-has-children','menu-item-1935' , {'menu-selected': caseStudies}]">
                                             <div style="align-items: center;display: flex;justify-content: space-between;">
-                                                <router-link to="/nos-solutions">Outils pratiques</router-link>
+                                                <router-link to="/outils-pratiques">Outils pratiques</router-link>
                                                 <!-- <i class="fa-solid fa-chevron-down" style="margin-right:10px;" @click="showCaseStudies"></i> -->
 
                                             </div>

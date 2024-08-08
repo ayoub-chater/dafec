@@ -29,7 +29,7 @@ class ContactController extends Controller
             $mail->Port = env('MAIL_PORT');
    
             
-            $mail->addAddress('anassbarik03@gmail.com', 'Anass Barik');
+            $mail->addAddress('douaa.ouchen@dafec.ma', 'Douaa Ouchen');
                $mail->isHTML(false);
             $mail->Subject = "Demande d'information";
             $phone = $data['phone'];

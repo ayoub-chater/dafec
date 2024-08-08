@@ -51,11 +51,18 @@
     #slide-buttons {
         top: 25px;
     }
+    #slide-buttons .fa-bars {
+        top: 50px!important;
+        font-size: 32px !important;
+
+    }
     .top-bar {
         padding-bottom: 30px;
     }
     .address-bar {
         text-align: center;
+        line-height: 34px!important;
+        margin-bottom: 15px!important;
     }
     .top-bar-left .address-bar i {
         display: inline-block;
@@ -69,7 +76,7 @@
         overflow: hidden;
     }
     .top-bar-right .quote-link {
-        float: none;
+        float: none!important;
     }
     .site-header .top-header .info {
         display: none;
@@ -227,5 +234,8 @@
     .slider-home .tp-caption.rev-btn {
         min-width: 153px !important;
         max-width: 153px !important;
+    }
+    .row-flex{
+        flex-direction: column!important;
     }
 }
